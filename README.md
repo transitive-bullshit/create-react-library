@@ -42,36 +42,36 @@ react-modern-library-cli
 
 After you answer some basic prompts about your module, the CLI will perform the following:
 - copy over the template to a new folder in the current directory
-- initialize yarn or npm package manager
+- install dependencies via yarn or npm
 - link packages together for development
 - initialize local git repo
 
-At this point, you're new module is all setup for local development.
+At this point, your new module is all setup for local development.
 
 ## Development
 
-#### Local Development
-
 Local development is broken into two parts.
 
-Note: if you're using yarn, you can skip the `yarn link` steps, as the generated module's example includes a local-link by default.
+First, you'll run rollup to watch your `src/` module and automatically recompile it into `dist/` whenever you make changes.
 
 ```bash
-npm start # runs rollup with watch flag => dist
+npm start # runs rollup with watch flag
 ```
 
-The second part will be running our `example/` create-react-app that's linked to the local version of your module.
+The second part will be running the `example/` create-react-app that's linked to the local version of your module.
 
 ```bash
 # (in another tab)
 cd example
-npm link <your-module-name> # you may skip this if using yarn
+npm link <your-module-name> # optional if using yarn
 npm start # runs create-react-app dev server
 ```
 
 Now, anytime you make a change to your component in `src/` or to the example app's `example/src`, `create-react-app` will live-reload your local dev server so you can iterate on your component in real-time.
 
 ![](https://media.giphy.com/media/12NUbkX6p4xOO4/giphy.gif)
+
+Note: if you're using yarn, there is no need to use `yarn link`, as the generated module's example includes a local-link by default.
 
 #### NPM Stuffs
 
