@@ -1,9 +1,12 @@
 {
   "name": "react-modern-library-cli",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "CLI for easily bootstrapping modern react libraries",
   "main": "index.js",
   "license": "MIT",
+  "bin": {
+    "react-modern-library-cli": "index.js"
+  },
   "dependencies": {
     "consolidate": "^0.15.0",
     "cp-file": "^5.0.0",
