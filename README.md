@@ -1,12 +1,12 @@
 # react-modern-library-cli
 
-> CLI for easily creating and publishing modern React modules with Rollup and example usage via create-react-app.
+> CLI for easily publishing modern React modules with Rollup and example usage via create-react-app.
 
 [![NPM](https://img.shields.io/npm/v/react-modern-library-cli.svg)](https://www.npmjs.com/package/react-modern-library-cli) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Intro
 
-This CLI is an easy-to-use version of this [boilerplate](https://github.com/transitive-bullshit/react-modern-library-boilerplate), which you can read about [here](https://hackernoon.com/publishing-baller-react-modules-2b039d84bce7).
+This CLI based off of this [boilerplate](https://github.com/transitive-bullshit/react-modern-library-boilerplate), which you can read about [here](https://hackernoon.com/publishing-baller-react-modules-2b039d84bce7).
 
 **The purpose of this CLI is to make publishing your own React components as simple as possible.**
 
