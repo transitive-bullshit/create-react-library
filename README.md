@@ -6,9 +6,7 @@
 
 ## Intro
 
-*Note*: Modern means modern as of March, 2018.. I'm sure everything will change in a month... :joy: :joy:
-
-This is a super easy-to-use CLI version of this previously published [boilerplate](https://github.com/transitive-bullshit/react-modern-library-boilerplate), which you can read about in this [article](https://hackernoon.com/publishing-baller-react-modules-2b039d84bce7).
+This CLI is an easy-to-use version of this [boilerplate](https://github.com/transitive-bullshit/react-modern-library-boilerplate), which you can read about [here](https://hackernoon.com/publishing-baller-react-modules-2b039d84bce7).
 
 **The purpose of this CLI is to make publishing your own React components as simple as possible.**
 
@@ -40,10 +38,10 @@ npm install -g react-modern-library-cli
 react-modern-library-cli
 ```
 
-After you answer some basic prompts about your module, the CLI will perform the following:
+Answer some basic prompts about your module, and then the CLI will perform the following steps:
 - copy over the template to a new folder in the current directory
 - install dependencies via yarn or npm
-- link packages together for development
+- link packages together for local development
 - initialize local git repo
 
 At this point, your new module is all setup for local development.
