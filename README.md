@@ -46,13 +46,11 @@ Answer some basic prompts about your module, and then the CLI will perform the f
 - link packages together for local development
 - initialize local git repo
 
-At this point, your new module is all setup for local development.
-
-## Development
+At this point, your new module should resemble this screenshot and is all setup for local development.
 
 ![](https://raw.githubusercontent.com/transitive-bullshit/react-modern-library-cli/master/media/demo.png)
 
-*(Breakdown of the files in your newly created module)*
+## Development
 
 Local development is broken into two parts.
 
