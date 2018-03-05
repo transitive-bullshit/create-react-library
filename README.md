@@ -10,6 +10,8 @@ This CLI based off of this [boilerplate](https://github.com/transitive-bullshit/
 
 **The purpose of this CLI is to make publishing your own React components as simple as possible.**
 
+![](https://raw.githubusercontent.com/transitive-bullshit/react-modern-library-cli/master/media/demo.gif)
+
 ## Features
 
 - Support all modern JS language features for component development out of the box
@@ -37,8 +39,6 @@ npm install -g react-modern-library-cli
 ```bash
 react-modern-library-cli
 ```
-
-![](https://raw.githubusercontent.com/transitive-bullshit/react-modern-library-cli/master/media/demo.gif)
 
 Answer some basic prompts about your module, and then the CLI will perform the following steps:
 - copy over the template to a new folder in the current directory
