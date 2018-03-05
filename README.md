@@ -38,6 +38,8 @@ npm install -g react-modern-library-cli
 react-modern-library-cli
 ```
 
+![](https://raw.githubusercontent.com/transitive-bullshit/react-modern-library-cli/master/media/demo.gif)
+
 Answer some basic prompts about your module, and then the CLI will perform the following steps:
 - copy over the template to a new folder in the current directory
 - install dependencies via yarn or npm
@@ -47,6 +49,10 @@ Answer some basic prompts about your module, and then the CLI will perform the f
 At this point, your new module is all setup for local development.
 
 ## Development
+
+![](https://raw.githubusercontent.com/transitive-bullshit/react-modern-library-cli/master/media/demo.png)
+
+*(Breakdown of the files in your newly created module)*
 
 Local development is broken into two parts.
 
