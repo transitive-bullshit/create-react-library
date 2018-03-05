@@ -6,11 +6,11 @@
 
 ## Intro
 
-This CLI is based off of this [boilerplate](https://github.com/transitive-bullshit/react-modern-library-boilerplate), which you can optionally read in-depth about [here](https://hackernoon.com/publishing-baller-react-modules-2b039d84bce7).
-
 **The purpose of this CLI is to make publishing your own React components as simple as possible.**
 
 ![](https://raw.githubusercontent.com/transitive-bullshit/react-modern-library-cli/master/media/demo.gif)
+
+This CLI is based off of this [boilerplate](https://github.com/transitive-bullshit/react-modern-library-boilerplate), which you can optionally read in-depth about [here](https://hackernoon.com/publishing-baller-react-modules-2b039d84bce7).
 
 ## Features
 
