@@ -1,6 +1,6 @@
 {
   "name": "create-react-library",
-  "version": "1.4.3",
+  "version": "2.0.0",
   "description": "CLI for easily bootstrapping modern react libraries",
   "repository": "transitive-bullshit/create-react-library",
   "main": "index.js",
