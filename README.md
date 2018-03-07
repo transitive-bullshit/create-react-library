@@ -1,14 +1,16 @@
-# react-modern-library-cli
+# create-react-library
 
 > CLI for easily publishing modern React modules with Rollup and example usage via create-react-app.
 
-[![NPM](https://img.shields.io/npm/v/react-modern-library-cli.svg)](https://www.npmjs.com/package/react-modern-library-cli) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/create-react-library.svg)](https://www.npmjs.com/package/create-react-library) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Intro
 
 **The purpose of this CLI is to make publishing your own React components as simple as possible.**
 
-![](https://raw.githubusercontent.com/transitive-bullshit/react-modern-library-cli/master/media/demo.gif)
+<p align="center">
+  <img width="600" src="https://cdn.rawgit.com/transitive-bullshit/create-react-library/master/media/demo.svg">
+</p>
 
 The CLI is based on this [boilerplate](https://github.com/transitive-bullshit/react-modern-library-boilerplate), which you can optionally read in-depth about [here](https://hackernoon.com/publishing-baller-react-modules-2b039d84bce7).
 
@@ -31,13 +33,13 @@ The CLI is based on this [boilerplate](https://github.com/transitive-bullshit/re
 ## Install
 
 ```bash
-npm install -g react-modern-library-cli
+npm install -g create-react-library
 ```
 
 ## Creating a New Module
 
 ```bash
-react-modern-library-cli
+create-react-library
 ```
 
 Answer some basic prompts about your module, and then the CLI will perform the following steps:
@@ -48,7 +50,9 @@ Answer some basic prompts about your module, and then the CLI will perform the f
 
 At this point, your new module should resemble this screenshot and is all setup for local development.
 
-![](https://raw.githubusercontent.com/transitive-bullshit/react-modern-library-cli/master/media/demo.png)
+<p align="center">
+  <img width="600" src="https://cdn.rawgit.com/transitive-bullshit/create-react-library/master/media/tree.svg">
+</p>
 
 ## Development
 

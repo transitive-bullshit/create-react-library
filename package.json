@@ -1,12 +1,12 @@
 {
-  "name": "react-modern-library-cli",
+  "name": "create-react-library",
   "version": "1.4.3",
   "description": "CLI for easily bootstrapping modern react libraries",
-  "repository": "transitive-bullshit/react-modern-library-cli",
+  "repository": "transitive-bullshit/create-react-library",
   "main": "index.js",
   "license": "MIT",
   "bin": {
-    "react-modern-library-cli": "index.js"
+    "create-react-library": "index.js"
   },
   "dependencies": {
     "consolidate": "^0.15.0",

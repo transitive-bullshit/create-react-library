@@ -18,7 +18,7 @@ module.exports = async () => {
 if (!module.parent) {
   meow(`
     Usage
-      $ react-modern-library-cli
+      $ create-react-library
   `)
 
   module.exports()
