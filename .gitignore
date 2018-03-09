@@ -18,3 +18,7 @@ dist
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# temp directories created during testing
+my-test-library
+nala
