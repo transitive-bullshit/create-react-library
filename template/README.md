@@ -28,4 +28,4 @@ class Example extends Component {
 
 ## License
 
-{{license}} © [{{author}}](https://github.com/{{repo}})
+{{license}} © [{{author}}](https://github.com/{{author}})

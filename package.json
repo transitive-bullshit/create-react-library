@@ -1,17 +1,32 @@
 {
   "name": "create-react-library",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "CLI for easily bootstrapping modern react libraries",
   "repository": "transitive-bullshit/create-react-library",
+  "author": "Travis Fischer <travis@automagical.ai>",
   "main": "index.js",
   "license": "MIT",
   "bin": {
     "create-react-library": "index.js"
   },
+  "keywords": [
+    "react",
+    "preact",
+    "library",
+    "create-react-app",
+    "cli",
+    "component",
+    "rollup",
+    "babel",
+    "preact",
+    "publish"
+  ],
   "dependencies": {
+    "asciicast2gif": "^0.1.4",
     "consolidate": "^0.15.0",
     "cp-file": "^5.0.0",
     "execa": "^0.9.0",
+    "gifsicle": "^3.0.4",
     "git-config-path": "^1.0.1",
     "github-username": "^4.1.0",
     "globby": "^8.0.1",

@@ -1,6 +1,6 @@
 # create-react-library
 
-> CLI for easily publishing modern React modules with Rollup and example usage via create-react-app.
+> CLI for easily publishing modern React libraries with Rollup and example usage via create-react-app.
 
 [![NPM](https://img.shields.io/npm/v/create-react-library.svg)](https://www.npmjs.com/package/create-react-library) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -13,19 +13,19 @@
 </p>
 
 
-The CLI is based on this [boilerplate](https://github.com/transitive-bullshit/react-modern-library-boilerplate), which you can optionally read in-depth about [here](https://hackernoon.com/publishing-baller-react-modules-2b039d84bce7).
+The CLI is based on this [boilerplate](https://github.com/transitive-bullshit/react-modern-library-boilerplate), which you can optionally read about [here](https://hackernoon.com/publishing-baller-react-modules-2b039d84bce7).
 
 ## Features
 
-- Support all modern JS language features for component development out of the box
+- Supports all modern JS language features for component development out of the box
 - Build process to convert source to `umd` and `es` module formats for publishing to npm
 - Comes with an `example` app using a standard [create-react-app](https://github.com/facebookincubator/create-react-app), serving 2 purposes
   - Local, hot-reload server for developing your module
   - Easily publishable to github pages so users can quickly play with your module
-- Use [Rollup](https://rollupjs.org/) for build process and [Babel](https://babeljs.io/) for transpilation
+- Uses [Rollup](https://rollupjs.org/) for build process and [Babel](https://babeljs.io/) for transpilation
   - See the [blog post](https://hackernoon.com/publishing-baller-react-modules-2b039d84bce7) for an explanation of Rollup vs Webpack
-- Allow the use of `npm` modules within your library, either as dependencies or peer-dependencies
-- Support importing CSS in your components (with css modules enabled by default)
+- Allows the use of `npm` modules within your library, either as dependencies or peer-dependencies
+- Supports importing CSS in your components (with css modules enabled by default)
   - Note that CSS support will be a noop if you're using css-in-js
 - Testing with [Jest](https://facebook.github.io/jest/), using `react-scripts` from `create-react-app`
 - Sourcemap creation enabled by default
