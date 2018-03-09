@@ -12,6 +12,9 @@
   "scripts": {
     "test": "ava -v && standard *.js lib/*.js"
   },
+  "engines": {
+    "node": ">=8"
+  },
   "keywords": [
     "react",
     "preact",
