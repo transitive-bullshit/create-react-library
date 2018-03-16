@@ -10,6 +10,7 @@
   "jsnext:main": "dist/index.es.js",
   "scripts": {
     "test": "CI=1 react-scripts test --env=jsdom",
+    "test:watch": "react-scripts test --env=jsdom",
     "build": "rollup -c",
     "start": "rollup -c -w",
     "prepare": "{{manager}} run build",

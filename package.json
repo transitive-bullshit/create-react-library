@@ -28,6 +28,7 @@
     "publish"
   ],
   "dependencies": {
+    "conf": "^1.4.0",
     "consolidate": "^0.15.0",
     "cp-file": "^5.0.0",
     "execa": "^0.9.0",
