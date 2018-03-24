@@ -7,7 +7,7 @@
   "main": "index.js",
   "license": "MIT",
   "bin": {
-    "create-react-library": "dist/index.js"
+    "create-react-library": "index.js"
   },
   "scripts": {
     "test": "ava -v && standard *.js lib/*.js",
