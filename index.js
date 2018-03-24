@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 'use strict'
 
 require('util.promisify/shim')()
