@@ -10,6 +10,7 @@
 
 const nodeExternals = require('webpack-node-externals')
 const path = require('path')
+const webpack = require('webpack')
 
 module.exports = {
   target: 'node',
@@ -28,23 +29,36 @@ module.exports = {
   externals: [
     nodeExternals()
   ],
+  plugins: [
+    new webpack.BannerPlugin({
+      banner: '#!/usr/bin/env node',
+      raw: true
+    })
+  ],
   module: {
     loaders: [
       {
-        loader: 'babel-loader',
         test: /.js$/,
         exclude: /node_modules/,
-        query: {
-          babelrc: false,
-          plugins: [
-            'transform-async-to-generator',
-            'transform-runtime'
-          ],
-          presets: [
-            'env',
-            'stage-0'
-          ]
-        }
+        loaders: [
+          {
+            loader: 'shebang-loader'
+          },
+          {
+            loader: 'babel-loader',
+            query: {
+              babelrc: false,
+              plugins: [
+                'transform-async-to-generator',
+                'transform-runtime'
+              ],
+              presets: [
+                'env',
+                'stage-0'
+              ]
+            }
+          }
+        ]
       }
     ]
   }
