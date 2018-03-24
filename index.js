@@ -1,8 +1,6 @@
 #!/usr/bin/env node
 'use strict'
 
-require('util.promisify/shim')()
-
 const meow = require('meow')
 
 const getLibraryDefaults = require('./lib/get-library-defaults')

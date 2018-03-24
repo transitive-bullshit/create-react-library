@@ -1,15 +1,13 @@
 {
   "name": "create-react-library",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "description": "CLI for easily bootstrapping modern react libraries",
   "repository": "transitive-bullshit/create-react-library",
   "author": "Travis Fischer <travis@automagical.ai>",
-  "main": "dist/index.js",
-  "module": "index.js",
-  "jsnext:main": "index.js",
+  "main": "index.js",
   "license": "MIT",
   "bin": {
-    "create-react-library": "dist/index.js"
+    "create-react-library": "index.js"
   },
   "scripts": {
     "test": "ava -v && standard *.js lib/*.js",
