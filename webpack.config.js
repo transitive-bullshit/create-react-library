@@ -1,8 +1,8 @@
 /**
- * Transpiles create-react-library CLI to ES5 in order to support node >= 4.
+ * Transpiles the CLI to ES5 in order to support node >= 4.
  *
  * Note: we use Webpack to compile the CLI, but the generated template still
- * uses Rollup for compiling the library. We don't judge between the two, but
+ * uses Rollup for compiling libraries. We don't judge between the two, but
  * rather try to use the best tool for the job.
  */
 
