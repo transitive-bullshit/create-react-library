@@ -9,7 +9,7 @@
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
   "scripts": {
-    "test": "CI=1 react-scripts test --env=jsdom",
+    "test": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
     "build": "rollup -c",
     "start": "rollup -c -w",
@@ -30,6 +30,7 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
+    "cross-env": "^5.1.4",
     "eslint-config-standard": "^11.0.0",
     "eslint-config-standard-react": "^6.0.0",
     "eslint-plugin-react": "^7.7.0",
