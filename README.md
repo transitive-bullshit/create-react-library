@@ -12,14 +12,13 @@
   <img width="600" src="https://cdn.rawgit.com/transitive-bullshit/create-react-library/master/media/demo.svg">
 </p>
 
-
 The CLI is based on this [boilerplate](https://github.com/transitive-bullshit/react-modern-library-boilerplate), which you can optionally read about [here](https://hackernoon.com/publishing-baller-react-modules-2b039d84bce7).
 
 ## Features
 
 - Easy-to-use CLI
 - Handles all modern JS features
-- Bundles `umd` and `es` module formats
+- Bundles `cjs` and `es` module formats
 - [create-react-app](https://github.com/facebookincubator/create-react-app) for example usage and local dev
 - [Rollup](https://rollupjs.org/) for build process
 - [Babel](https://babeljs.io/) for transpilation
