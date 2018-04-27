@@ -1,0 +1,20 @@
+{
+  "name": "{{name}}-example",
+  "homepage": "https://{{author}}.github.io/{{name}}",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "dependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "{{name}}": "{{#if yarn}}link:..{{else}}*{{/if}}",
+    "react-scripts": "^1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
