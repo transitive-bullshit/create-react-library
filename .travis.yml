@@ -3,5 +3,3 @@ cache: yarn
 node_js:
   - 9
   - 8
-  - 6
-  - 4
