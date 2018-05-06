@@ -116,6 +116,20 @@ Here is a [branch](https://github.com/transitive-bullshit/react-modern-library-b
 
 Here is a [branch](https://github.com/transitive-bullshit/react-modern-library-boilerplate/tree/feature/material-ui) which demonstrates how to make use of a relatively complicated peer dependency, [material-ui](https://github.com/mui-org/material-ui). It shows the power of [rollup-plugin-peer-deps-external](https://www.npmjs.com/package/rollup-plugin-peer-deps-external) which makes it a breeze to create reusable modules that include complicated material-ui subcomponents without having them bundled as a part of your module.
 
+### Libraries
+
+Here are some example libraries that have been bootstrapped with `create-react-library`.
+
+- [tabler-react](https://github.com/tabler/tabler-react) - React components and demo for the Tabler UI theme.
+- [react-background-slideshow](https://github.com/transitive-bullshit/react-background-slideshow) - Sexy tiled background slideshow for React 🔥
+- [react-starfield-animation](https://github.com/transitive-bullshit/react-starfield-animation) -✨ Canvas-based starfield animation for React.
+- [react-particle-effect-button](https://github.com/transitive-bullshit/react-particle-effect-button) - Bursting particle effect buttons for React 🎉
+- [react-particle-animation](https://github.com/transitive-bullshit/react-particle-animation) - Canvas-based particle animation for React.
+- [react-block-image](https://github.com/transitive-bullshit/react-block-image) - React replacement for img with more control + fallback support.
+- [react-mp3-recorder](https://github.com/transitive-bullshit/react-mp3-recorder) - Microphone recorder for React that captures mp3 audio 🎵
+
+Want to add yours to the list? Submit an [issue](https://github.com/transitive-bullshit/create-react-library/issues/new)!
+
 
 ## License
 
