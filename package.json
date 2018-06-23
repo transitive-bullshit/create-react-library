@@ -28,6 +28,7 @@
     "publish"
   ],
   "dependencies": {
+    "commander": "^2.15.1",
     "conf": "^1.4.0",
     "cp-file": "^5.0.0",
     "execa": "^0.10.0",
@@ -37,7 +38,6 @@
     "handlebars": "^4.0.11",
     "inquirer": "^5.2.0",
     "make-dir": "^1.2.0",
-    "meow": "^5.0.0",
     "node-compat-require": "^1.0.3",
     "ora": "^2.1.0",
     "p-each-series": "^1.0.0",
