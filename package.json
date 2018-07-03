@@ -1,6 +1,6 @@
 {
   "name": "create-react-library",
-  "version": "2.3.10",
+  "version": "2.3.11",
   "description": "CLI for easily bootstrapping modern react libraries",
   "repository": "transitive-bullshit/create-react-library",
   "author": "Travis Fischer <travis@automagical.ai>",
