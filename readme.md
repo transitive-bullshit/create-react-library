@@ -67,6 +67,7 @@ First, you'll run rollup to watch your `src/` module and automatically recompile
 
 ```bash
 npm start # runs rollup with watch flag
+npm link <your-module-name> # optional if using yarn
 ```
 
 The second part will be running the `example/` create-react-app that's linked to the local version of your module.
@@ -74,7 +75,6 @@ The second part will be running the `example/` create-react-app that's linked to
 ```bash
 # (in another tab)
 cd example
-npm link <your-module-name> # optional if using yarn
 npm start # runs create-react-app dev server
 ```
 
