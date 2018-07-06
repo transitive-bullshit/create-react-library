@@ -3595,13 +3595,13 @@ nice-try@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.4.tgz#d93962f6c52f2c1558c0fbda6d512819f1efe1c4"
 
-node-compat-require@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/node-compat-require/-/node-compat-require-1.0.3.tgz#be7136a60f90199daa9cc194ddcb112fc49ad5c4"
+node-compat-require@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/node-compat-require/-/node-compat-require-1.0.4.tgz#f7df99a2ddca0892c1a1a285395255d03ac5253b"
   dependencies:
     execa "^0.10.0"
     npx "^10.2.0"
-    resolve "^1.7.1"
+    resolve "^1.8.1"
     semver "^5.5.0"
 
 node-fetch-npm@^2.0.2:
@@ -4692,9 +4692,9 @@ resolve@^1.3.3, resolve@^1.5.0:
   dependencies:
     path-parse "^1.0.5"
 
-resolve@^1.7.1:
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.7.1.tgz#aadd656374fd298aee895bc026b8297418677fd3"
+resolve@^1.8.1:
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.8.1.tgz#82f1ec19a423ac1fbd080b0bab06ba36e84a7a26"
   dependencies:
     path-parse "^1.0.5"
 
