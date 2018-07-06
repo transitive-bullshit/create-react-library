@@ -19,6 +19,7 @@ The CLI is based on this [boilerplate](https://github.com/transitive-bullshit/re
 ## Features
 
 - Easy-to-use CLI
+- Over 2000 public modules created!!
 - Handles all modern JS features
 - Bundles `cjs` and `es` module formats
 - [create-react-app](https://github.com/facebookincubator/create-react-app) for example usage and local dev
@@ -67,7 +68,6 @@ First, you'll run rollup to watch your `src/` module and automatically recompile
 
 ```bash
 npm start # runs rollup with watch flag
-npm link <your-module-name> # optional if using yarn
 ```
 
 The second part will be running the `example/` create-react-app that's linked to the local version of your module.
@@ -75,19 +75,18 @@ The second part will be running the `example/` create-react-app that's linked to
 ```bash
 # (in another tab)
 cd example
+npm link <your-module-name> # you can skip this step if using yarn
 npm start # runs create-react-app dev server
 ```
 
-Now, anytime you make a change to your component in `src/` or to the example app's `example/src`, `create-react-app` will live-reload your local dev server so you can iterate on your component in real-time.
+Now, anytime you make a change to your library in `src/` or to the example app's `example/src`, `create-react-app` will live-reload your local dev server so you can iterate on your component in real-time.
 
 ![](https://media.giphy.com/media/12NUbkX6p4xOO4/giphy.gif)
 
-Note: if you're using yarn, there is no need to use `yarn link`, as the generated module's example includes a local-link by default.
 
+#### Publishing to NPM
 
-#### NPM Stuffs
-
-The only difference when publishing your component to **npm** is to make sure you add any npm modules you want as peer dependencies are properly marked as `peerDependencies` in `package.json`. The rollup config will automatically recognize them as peer dependencies and not try to bundle them in your module.
+The only difference when publishing your library to **npm** is to make sure you add any npm modules you want as peer dependencies are properly marked as `peerDependencies` in `package.json`. The rollup config will automatically recognize them as peer dependencies and not try to bundle them in your module.
 
 Then publish as per usual.
 
@@ -129,6 +128,7 @@ Here are some example libraries that have been bootstrapped with `create-react-l
 - [react-mp3-recorder](https://github.com/transitive-bullshit/react-mp3-recorder) - Microphone recorder for React that captures mp3 audio 🎵
 - [react-before-after-slider](https://github.com/transitive-bullshit/react-before-after-slider) - A sexy image comparison slider for React.
 - [worldwind-react-globe](https://github.com/emxsys/worldwind-react-globe) - NASA WorldWind globe component for React.
+- [react-shimmer](https://github.com/gokcan/react-shimmer) - Shimmer effect for loading images.
 
 Want to add yours to the list? Submit an [issue](https://github.com/transitive-bullshit/create-react-library/issues/new)!
 

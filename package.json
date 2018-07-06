@@ -6,6 +6,7 @@
   "author": "Travis Fischer <travis@automagical.ai>",
   "main": "index.js",
   "license": "MIT",
+  "reveal": true,
   "bin": {
     "create-react-library": "index.js"
   },
