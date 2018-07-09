@@ -30,6 +30,7 @@ The CLI is based on this [boilerplate](https://github.com/transitive-bullshit/re
 - Supports CSS modules
 - Sourcemap creation
 - Thorough documentation :heart_eyes:
+- [Chinese docs](./readme.zh-CN.md) by [@monsterooo](https://github.com/monsterooo)
 
 
 ## Install
