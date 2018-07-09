@@ -19,7 +19,7 @@ The CLI is based on this [boilerplate](https://github.com/transitive-bullshit/re
 ## Features
 
 - Easy-to-use CLI
-- Over 2000 public modules created!!
+- Hundreds of public modules created
 - Handles all modern JS features
 - Bundles `cjs` and `es` module formats
 - [create-react-app](https://github.com/facebookincubator/create-react-app) for example usage and local dev
