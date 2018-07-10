@@ -76,7 +76,6 @@ The second part will be running the `example/` create-react-app that's linked to
 ```bash
 # (in another tab)
 cd example
-npm link <your-module-name> # you can skip this step if using yarn
 npm start # runs create-react-app dev server
 ```
 
