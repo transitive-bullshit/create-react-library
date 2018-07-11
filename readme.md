@@ -13,8 +13,6 @@
   <img width="600" src="https://cdn.rawgit.com/transitive-bullshit/create-react-library/master/media/demo.svg">
 </p>
 
-The CLI is based on this [boilerplate](https://github.com/transitive-bullshit/react-modern-library-boilerplate), which you can optionally read about [here](https://hackernoon.com/publishing-baller-react-modules-2b039d84bce7).
-
 
 ## Features
 
@@ -27,6 +25,7 @@ The CLI is based on this [boilerplate](https://github.com/transitive-bullshit/re
 - [Jest](https://facebook.github.io/jest/) for testing
 - Supports complicated peer-dependencies
 - Supports CSS modules
+- Optional support for TypeScript
 - Sourcemap creation
 - Hundreds of public modules created
 - Thorough documentation :heart_eyes:
@@ -115,6 +114,10 @@ Here is a [branch](https://github.com/transitive-bullshit/react-modern-library-b
 
 Here is a [branch](https://github.com/transitive-bullshit/react-modern-library-boilerplate/tree/feature/material-ui) which demonstrates how to make use of a relatively complicated peer dependency, [material-ui](https://github.com/mui-org/material-ui). It shows the power of [rollup-plugin-peer-deps-external](https://www.npmjs.com/package/rollup-plugin-peer-deps-external) which makes it a breeze to create reusable modules that include complicated material-ui subcomponents without having them bundled as a part of your module.
 
+### Boilerplate
+
+The CLI is based on this [boilerplate](https://github.com/transitive-bullshit/react-modern-library-boilerplate), which you can optionally read about [here](https://hackernoon.com/publishing-baller-react-modules-2b039d84bce7).
+
 ### Libraries
 
 Here are some example libraries that have been bootstrapped with `create-react-library`.
@@ -131,7 +134,6 @@ Here are some example libraries that have been bootstrapped with `create-react-l
 - [react-shimmer](https://github.com/gokcan/react-shimmer) - Shimmer effect for loading images.
 
 Want to add yours to the list? Submit an [issue](https://github.com/transitive-bullshit/create-react-library/issues/new)!
-
 
 ## License
 
