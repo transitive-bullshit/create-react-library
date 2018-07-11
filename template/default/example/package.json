@@ -2,14 +2,14 @@
   "name": "{{name}}-example",
   "homepage": "https://{{author}}.github.io/{{name}}",
   "version": "0.0.0",
-  "private": true,
   "license": "MIT",
+  "private": true,
   "dependencies": {
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "{{name}}": "{{#if yarn}}link:..{{else}}*{{/if}}",
-    "react-scripts": "^1.1.4"
+    "react-scripts": "^1.1.4",
+    "{{name}}": "file:.."
   },
   "scripts": {
     "start": "react-scripts start",

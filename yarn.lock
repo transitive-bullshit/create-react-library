@@ -3595,9 +3595,9 @@ nice-try@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.4.tgz#d93962f6c52f2c1558c0fbda6d512819f1efe1c4"
 
-node-compat-require@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/node-compat-require/-/node-compat-require-1.0.4.tgz#f7df99a2ddca0892c1a1a285395255d03ac5253b"
+node-compat-require@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/node-compat-require/-/node-compat-require-1.0.5.tgz#600802c65964be6282e29dbc56ce12d1b382d548"
   dependencies:
     execa "^0.10.0"
     npx "^10.2.0"
