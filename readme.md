@@ -23,6 +23,7 @@
 - [Rollup](https://rollupjs.org/) for build process
 - [Babel](https://babeljs.io/) for transpilation
 - [Jest](https://facebook.github.io/jest/) for testing
+- Supports [Storybook](https://storybook.js.org/) for UI development environment
 - Supports complicated peer-dependencies
 - Supports CSS modules
 - Optional support for TypeScript
@@ -82,6 +83,33 @@ Now, anytime you make a change to your library in `src/` or to the example app's
 
 ![](https://media.giphy.com/media/12NUbkX6p4xOO4/giphy.gif)
 
+
+#### Using storybook
+
+To run storybook use the command:
+
+```bash
+npm storybook # runs storybook server in the port 9001
+```
+
+to add new stories create a new `stories.js` file:
+
+
+
+```jsx
+// MyComponent.stories.js
+
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { MyComponent } from '../MyComponent';
+
+let stories = storiesOf('MyComponent', module);
+
+stories.add('Default', () => <MyComponent/> );
+```
+
+you could also adding many plugins and addons to the `config.js` on `.storybook` folder
+for more information please visit the addons [page](https://storybook.js.org/addons/introduction/)
 
 #### Publishing to NPM
 
