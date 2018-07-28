@@ -132,6 +132,7 @@ Here are some example libraries that have been bootstrapped with `create-react-l
 - [react-before-after-slider](https://github.com/transitive-bullshit/react-before-after-slider) - A sexy image comparison slider for React.
 - [worldwind-react-globe](https://github.com/emxsys/worldwind-react-globe) - NASA WorldWind globe component for React.
 - [react-shimmer](https://github.com/gokcan/react-shimmer) - Shimmer effect for loading images.
+- [react-login-modal-sm](https://github.com/Silind/react-login-modal-sm) - Customizable React social media login modal.
 
 Want to add yours to the list? Submit an [issue](https://github.com/transitive-bullshit/create-react-library/issues/new)!
 
