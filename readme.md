@@ -135,7 +135,7 @@ Here are some example libraries that have been bootstrapped with `create-react-l
 - [react-login-modal-sm](https://github.com/Silind/react-login-modal-sm) - Customizable React social media login modal.
 - ... and hundreds more!
 
-Want to add yours to the list? Submit an [issue](https://github.com/transitive-bullshit/create-react-library/issues/new)!
+Want to add yours to the list? Submit an [issue](https://github.com/transitive-bullshit/create-react-library/issues/new).
 
 ## License
 
