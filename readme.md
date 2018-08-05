@@ -85,7 +85,7 @@ Now, anytime you make a change to your library in `src/` or to the example app's
 
 #### Publishing to NPM
 
-The only difference when publishing your library to **npm** is to make sure you add any npm modules you want as peer dependencies are properly marked as `peerDependencies` in `package.json`. The rollup config will automatically recognize them as peer dependencies and not try to bundle them in your module.
+The only difference when publishing your library to **npm** is to make sure that any npm modules you want as peer dependencies are properly marked as `peerDependencies` in `package.json`. The rollup config will automatically recognize them as peers and not try to bundle them in your module.
 
 Then publish as per usual.
 
@@ -133,6 +133,7 @@ Here are some example libraries that have been bootstrapped with `create-react-l
 - [worldwind-react-globe](https://github.com/emxsys/worldwind-react-globe) - NASA WorldWind globe component for React.
 - [react-shimmer](https://github.com/gokcan/react-shimmer) - Shimmer effect for loading images.
 - [react-login-modal-sm](https://github.com/Silind/react-login-modal-sm) - Customizable React social media login modal.
+- ... and hundreds more!
 
 Want to add yours to the list? Submit an [issue](https://github.com/transitive-bullshit/create-react-library/issues/new)!
 
