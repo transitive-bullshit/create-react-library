@@ -3940,7 +3940,7 @@ optionator@^0.8.2:
 
 ora@^3.0.0:
   version "3.0.0"
-  resolved "https://binrepo.target.com/artifactory/api/npm/npms/ora/-/ora-3.0.0.tgz#8179e3525b9aafd99242d63cc206fd64732741d0"
+  resolved "https://registry.yarnpkg.com/ora/-/ora-3.0.0.tgz#8179e3525b9aafd99242d63cc206fd64732741d0"
   dependencies:
     chalk "^2.3.1"
     cli-cursor "^2.1.0"
