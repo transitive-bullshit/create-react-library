@@ -60,9 +60,9 @@ At this point, your new module should resemble this screenshot and is all setup 
 
 ## Development
 
-Local development is broken into two parts.
+Local development is broken into two parts. It's ideal to use two tabs for this.
 
-First, you'll run rollup to watch your `src/` module and automatically recompile it into `dist/` whenever you make changes.
+First, run rollup to watch your `src/` module and automatically recompile it into `dist/` whenever you make changes.
 
 ```bash
 npm start # runs rollup with watch flag
@@ -83,23 +83,25 @@ Now, anytime you make a change to your library in `src/` or to the example app's
 
 #### Publishing to NPM
 
-The only difference when publishing your library to **npm** is to make sure that any npm modules you want as peer dependencies are properly marked as `peerDependencies` in `package.json`. The rollup config will automatically recognize them as peers and not try to bundle them in your module.
-
-Then publish as per usual.
+Publish your package to `npm`:
 
 ```bash
-# note this will build `commonjs` and `es`versions of your module to dist/
 npm publish
 ```
+
+This will build `cjs` and `es` versions of your module to `dist/`.
+Make sure that any npm modules you want as peer dependencies are properly marked as `peerDependencies` in `package.json`. The rollup config will automatically recognize them as peers and not try to bundle them in your module.
 
 
 #### Github Pages
 
-Deploying the example to github pages is simple. We create a production build of our example `create-react-app` that showcases your library and then run `gh-pages` to deploy the resulting bundle. This can be done as follows:
+Deploy your example app to GitHub Pages:
 
 ```bash
 npm run deploy
 ```
+
+This will create a production build of the example `create-react-app` that showcases your library and then runs `gh-pages` to deploy the resulting bundle.
 
 
 ## Examples
@@ -135,6 +137,7 @@ Here are some example libraries that have been bootstrapped with `create-react-l
 - ... and hundreds more!
 
 Want to add yours to the list? Submit an [issue](https://github.com/transitive-bullshit/create-react-library/issues/new).
+
 
 ## License
 
