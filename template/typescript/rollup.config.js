@@ -4,6 +4,7 @@ import external from 'rollup-plugin-peer-deps-external'
 import postcss from 'rollup-plugin-postcss-modules'
 import resolve from 'rollup-plugin-node-resolve'
 import url from 'rollup-plugin-url'
+import minify from 'rollup-plugin-babel-minify';
 
 import pkg from './package.json'
 
@@ -32,6 +33,9 @@ export default {
     typescript({
       rollupCommonJSResolveHack: true
     }),
-    commonjs()
+    commonjs(),
+    minify({
+      comments: false
+    })
   ]
 }
