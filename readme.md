@@ -46,7 +46,7 @@ create-react-library
 ```
 
 Answer some basic prompts about your module, and then the CLI will perform the following steps:
-- copy over the template to a new folder in the current directory
+- copy over the template
 - install dependencies via yarn or npm
 - link packages together for local development
 - initialize local git repo
@@ -89,7 +89,8 @@ Publish your package to `npm`:
 npm publish
 ```
 
-This will build `cjs` and `es` versions of your module to `dist/`.
+This also builds `cjs` and `es` versions of your module to `dist/`.
+
 Make sure that any npm modules you want as peer dependencies are properly marked as `peerDependencies` in `package.json`. The rollup config will automatically recognize them as peers and not try to bundle them in your module.
 
 
@@ -101,7 +102,7 @@ Deploy your example app to GitHub Pages:
 npm run deploy
 ```
 
-This will create a production build of the example `create-react-app` that showcases your library and then runs `gh-pages` to deploy the resulting bundle.
+This creates a production build of the example `create-react-app` that showcases your library and then runs `gh-pages` to deploy the resulting bundle.
 
 
 ## Examples
