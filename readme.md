@@ -60,7 +60,7 @@ At this point, your new module should resemble this screenshot and is all setup 
 
 ## Development
 
-Local development is broken into two parts. It's ideal to use two tabs for this.
+Local development is broken into two parts (ideally using two tabs).
 
 First, run rollup to watch your `src/` module and automatically recompile it into `dist/` whenever you make changes.
 
