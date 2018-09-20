@@ -83,20 +83,16 @@ Now, anytime you make a change to your library in `src/` or to the example app's
 
 #### Publishing to NPM
 
-Publish your package to `npm`:
-
 ```bash
 npm publish
 ```
 
-This also builds `cjs` and `es` versions of your module to `dist/`.
+This builds `cjs` and `es` versions of your module to `dist/` and then publishes your module to `npm`.
 
 Make sure that any npm modules you want as peer dependencies are properly marked as `peerDependencies` in `package.json`. The rollup config will automatically recognize them as peers and not try to bundle them in your module.
 
 
-#### Github Pages
-
-Deploy your example app to GitHub Pages:
+#### Deploying to Github Pages
 
 ```bash
 npm run deploy
