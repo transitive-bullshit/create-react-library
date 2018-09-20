@@ -23,6 +23,7 @@
 - [Jest](https://facebook.github.io/jest/) for testing
 - Supports complicated peer-dependencies
 - Supports CSS modules
+- Supports Minification
 - Optional support for TypeScript
 - Sourcemap creation
 - Hundreds of public modules created
