@@ -4,6 +4,8 @@
 
 import * as React from 'react'
 
+import { ReactComponent as ReactIcon } from './react-icon.svg';
+
 import styles from './styles.css'
 
 export type Props = { text: string }
@@ -17,6 +19,7 @@ export default class ExampleComponent extends React.Component<Props> {
     return (
       <div className={styles.test}>
         Example Component: {text}
+        <ReactIcon />
       </div>
     )
   }
