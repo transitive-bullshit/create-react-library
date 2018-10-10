@@ -1,7 +1,7 @@
 {
   "name": "{{name}}-example",
   "homepage": "https://{{author}}.github.io/{{name}}",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "private": true,
   "dependencies": {
     "react": "^16.5.2",
