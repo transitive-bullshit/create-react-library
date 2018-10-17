@@ -12,7 +12,7 @@ export default class ExampleComponent extends React.Component<Props> {
   render() {
     const {
       text
-    } = this.props
+    } = this.props;
 
     return (
       <div className={styles.test}>
