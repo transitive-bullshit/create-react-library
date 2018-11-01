@@ -3245,7 +3245,7 @@ lodash._root@~3.0.0:
 
 lodash.camelcase@^4.3.0:
   version "4.3.0"
-  resolved "https://binrepo.target.com/artifactory/api/npm/npms/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
+  resolved "https://registry.yarnpkg.com/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
 
 lodash.clonedeep@^4.5.0, lodash.clonedeep@~4.5.0:
   version "4.5.0"
@@ -3273,7 +3273,7 @@ lodash.flattendeep@^4.4.0:
 
 lodash.flow@^3.5.0:
   version "3.5.0"
-  resolved "https://binrepo.target.com/artifactory/api/npm/npms/lodash.flow/-/lodash.flow-3.5.0.tgz#87bf40292b8cf83e4e8ce1a3ae4209e20071675a"
+  resolved "https://registry.yarnpkg.com/lodash.flow/-/lodash.flow-3.5.0.tgz#87bf40292b8cf83e4e8ce1a3ae4209e20071675a"
 
 lodash.isequal@^4.5.0:
   version "4.5.0"
@@ -3281,7 +3281,7 @@ lodash.isequal@^4.5.0:
 
 lodash.kebabcase@^4.1.1:
   version "4.1.1"
-  resolved "https://binrepo.target.com/artifactory/api/npm/npms/lodash.kebabcase/-/lodash.kebabcase-4.1.1.tgz#8489b1cb0d29ff88195cceca448ff6d6cc295c36"
+  resolved "https://registry.yarnpkg.com/lodash.kebabcase/-/lodash.kebabcase-4.1.1.tgz#8489b1cb0d29ff88195cceca448ff6d6cc295c36"
 
 lodash.merge@^4.6.0:
   version "4.6.1"
@@ -3289,11 +3289,11 @@ lodash.merge@^4.6.0:
 
 lodash.mixin@^4.3.0:
   version "4.3.0"
-  resolved "https://binrepo.target.com/artifactory/api/npm/npms/lodash.mixin/-/lodash.mixin-4.3.0.tgz#85d332ba7cc99478d02c327c9cbfb0630cb24891"
+  resolved "https://registry.yarnpkg.com/lodash.mixin/-/lodash.mixin-4.3.0.tgz#85d332ba7cc99478d02c327c9cbfb0630cb24891"
 
 lodash.snakecase@^4.1.1:
   version "4.1.1"
-  resolved "https://binrepo.target.com/artifactory/api/npm/npms/lodash.snakecase/-/lodash.snakecase-4.1.1.tgz#39d714a35357147837aefd64b5dcbb16becd8f8d"
+  resolved "https://registry.yarnpkg.com/lodash.snakecase/-/lodash.snakecase-4.1.1.tgz#39d714a35357147837aefd64b5dcbb16becd8f8d"
 
 lodash.union@~4.6.0:
   version "4.6.0"
@@ -3305,7 +3305,7 @@ lodash.uniq@~4.5.0:
 
 lodash.upperfirst@^4.3.1:
   version "4.3.1"
-  resolved "https://binrepo.target.com/artifactory/api/npm/npms/lodash.upperfirst/-/lodash.upperfirst-4.3.1.tgz#1365edf431480481ef0d1c68957a5ed99d49f7ce"
+  resolved "https://registry.yarnpkg.com/lodash.upperfirst/-/lodash.upperfirst-4.3.1.tgz#1365edf431480481ef0d1c68957a5ed99d49f7ce"
 
 lodash.without@~4.4.0:
   version "4.4.0"
