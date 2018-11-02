@@ -1,4 +1,0 @@
-{{camelCase name}}
-{{kebabCase name}}
-{{pascalCase name}}
-{{snakeCase name}}
