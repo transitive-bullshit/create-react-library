@@ -131,6 +131,7 @@ Here are some example libraries that have been bootstrapped with `create-react-l
 - [react-shimmer](https://github.com/gokcan/react-shimmer) - Shimmer effect for loading images.
 - [react-login-modal-sm](https://github.com/Silind/react-login-modal-sm) - Customizable React social media login modal.
 - [react-gradient-scroll-indicator](https://github.com/jbccollins/react-gradient-scroll-indicator) - Wrapper for scrollable content with gradients.
+- [react-editext](https://github.com/alioguzhan/react-editext) - Editable Text Component.
 - ... and hundreds more!
 
 Want to add yours to the list? Submit an [issue](https://github.com/transitive-bullshit/create-react-library/issues/new).
