@@ -8,22 +8,11 @@ import svgr from '@svgr/rollup'
 
 import pkg from './package.json'
 
-export default {
+const createConfig = ({ output }) => ({
   input: 'src/index.js',
-  output: [
-    {
-      file: pkg.main,
-      format: 'cjs',
-      sourcemap: true
-    },
-    {
-      file: pkg.module,
-      format: 'es',
-      sourcemap: true
-    }
-  ],
+  output: Object.assign({ sourcemap: true }, output),
   plugins: [
-    external(),
+    external({ includeDependencies: true }),
     postcss({
       modules: true
     }),
@@ -31,9 +20,26 @@ export default {
     svgr(),
     babel({
       exclude: 'node_modules/**',
-      plugins: [ '@babel/external-helpers' ]
+      runtimeHelpers: true,
+      plugins: [
+        [
+          '@babel/transform-runtime',
+          { useESModules: output.format !== 'cjs' }
+        ]
+      ]
     }),
     resolve(),
     commonjs()
   ]
-}
+})
+
+export default [
+  createConfig({
+    file: pkg.main,
+    format: 'cjs',
+  }),
+  createConfig({
+    file: pkg.module,
+    format: 'esm',
+  })
+]
