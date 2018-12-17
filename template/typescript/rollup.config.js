@@ -30,7 +30,7 @@ export default {
     postcss({
       modules: true
     }),
-    url(),
+    url({ exclude: ['**/*.svg'] }),
     svgr(),
     resolve(),
     typescript({

@@ -27,7 +27,7 @@ export default {
     postcss({
       modules: true
     }),
-    url(),
+    url({ exclude: ['**/*.svg'] }),
     svgr(),
     babel({
       exclude: 'node_modules/**',
