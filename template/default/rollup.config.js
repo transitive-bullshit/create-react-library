@@ -31,7 +31,11 @@ export default {
     svgr(),
     babel({
       exclude: 'node_modules/**',
-      plugins: [ '@babel/external-helpers' ]
+      runtimeHelpers: true,
+      plugins: [
+        '@babel/external-helpers',
+        '@babel/transform-runtime'
+      ]
     }),
     resolve(),
     commonjs()
