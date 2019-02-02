@@ -121,7 +121,7 @@ Here are some example libraries that have been bootstrapped with `create-react-l
 
 - [tabler-react](https://github.com/tabler/tabler-react) - React components and demo for the Tabler UI theme.
 - [react-background-slideshow](https://github.com/transitive-bullshit/react-background-slideshow) - Sexy tiled background slideshow for React 🔥
-- [react-starfield-animation](https://github.com/transitive-bullshit/react-starfield-animation) -Canvas-based starfield animation for React ✨
+- [react-starfield-animation](https://github.com/transitive-bullshit/react-starfield-animation) - Canvas-based starfield animation for React ✨
 - [react-particle-effect-button](https://github.com/transitive-bullshit/react-particle-effect-button) - Bursting particle effect buttons for React 🎉
 - [react-particle-animation](https://github.com/transitive-bullshit/react-particle-animation) - Canvas-based particle animation for React 🌐
 - [react-block-image](https://github.com/transitive-bullshit/react-block-image) - React replacement for img with more control + fallback support 🌃
@@ -132,10 +132,17 @@ Here are some example libraries that have been bootstrapped with `create-react-l
 - [react-login-modal-sm](https://github.com/Silind/react-login-modal-sm) - Customizable React social media login modal.
 - [react-gradient-scroll-indicator](https://github.com/jbccollins/react-gradient-scroll-indicator) - Wrapper for scrollable content with gradients.
 - [react-editext](https://github.com/alioguzhan/react-editext) - Editable Text Component.
+- [react-blob](https://github.com/Hermanya/react-blob) - "Liquid in space" component for buttons, images, and background blobs
 - ... and hundreds more!
 
 Want to add yours to the list? Submit an [issue](https://github.com/transitive-bullshit/create-react-library/issues/new).
 
+### Related tools
+
+- [create-react-app](https://github.com/facebook/create-react-app)
+- [create-react-hook](https://github.com/Hermanya/create-react-hook)
+
+Know another tool? Submit an [issue](https://github.com/transitive-bullshit/create-react-library/issues/new).
 
 ## License
 
