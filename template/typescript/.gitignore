@@ -1,7 +1,14 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
+# IDE Stuff
+/.idea
+/.vscode
+
 # dependencies
 node_modules
+
+# testing
+/coverage
 
 # builds
 build
