@@ -30,7 +30,7 @@
 - [Chinese docs](./readme.zh-CN.md) by [@monsterooo](https://github.com/monsterooo)
 
 
-## Install
+## Install globally
 
 This package requires `node >= 4`, but we recommend `node >= 8`.
 
@@ -38,6 +38,13 @@ This package requires `node >= 4`, but we recommend `node >= 8`.
 npm install -g create-react-library
 ```
 
+## Usage with npx
+
+```bash
+npx create-react-library
+```
+
+_([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) comes with npm 5.2+ and higher, see [instructions for older npm versions](https://gist.github.com/gaearon/4064d3c23a77c74a3614c498a8bb1c5f))_
 
 ## Creating a New Module
 
@@ -81,7 +88,7 @@ Now, anytime you make a change to your library in `src/` or to the example app's
 ![](https://media.giphy.com/media/12NUbkX6p4xOO4/giphy.gif)
 
 
-#### Publishing to NPM
+#### Publishing to npm
 
 ```bash
 npm publish
