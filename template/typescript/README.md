@@ -13,11 +13,11 @@ npm install --save {{name}}
 ## Usage
 
 ```tsx
-import * as React from 'react'
+import React, { Component } from 'react'
 
 import MyComponent from '{{name}}'
 
-class Example extends React.Component {
+class Example extends Component {
   render () {
     return (
       <MyComponent />
