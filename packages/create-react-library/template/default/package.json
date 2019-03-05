@@ -5,24 +5,28 @@
   "author": "{{author}}",
   "license": "{{license}}",
   "repository": "{{repo}}",
-  "main": "dist/index.js",
-  "module": "dist/index.es.js",
+  "main": "build/index.js",
+  "module": "build/index.es.js",
   "engines": {
     "node": ">=8",
     "npm": ">=5"
   },
   "files": [
-    "dist"
+    "build"
   ],
   "scripts": {
     "build": "crl-scripts build",
     "start": "crl-scripts start",
     "test":   "crl-scripts test",
     "deploy": "crl-scripts deploy",
-    "eject": "crl-scripts eject"
+    "eject": "crl-scripts eject",
+    "prepare": "crl-scripts build"
   },
   "peerDependencies": {
-    "react": "^15.0.0 || ^16.0.0"
+    "react": ">=16"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "crl-scripts": "^0.0.1"
