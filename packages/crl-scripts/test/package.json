@@ -1,0 +1,28 @@
+{
+  "name": "nala-test",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "author": "transitive-bullshit",
+  "repository": "transitive-bullshit/nala-test",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "scripts": {
+    "nala": "../create-react-library-scripts/index.js start",
+    "build": "crl-scripts build",
+    "start": "crl-scripts start",
+    "test": "crl-scripts test",
+    "deploy": "crl-scripts deploy",
+    "eject": "crl-scripts eject"
+  },
+  "peerDependencies": {
+    "react": ">= 15"
+  },
+  "files": [
+    "dist"
+  ]
+}
