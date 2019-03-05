@@ -20,7 +20,7 @@ module.exports = (program) => {
           ghPagesBin = ghPagesLocal
 
           if (!fs.existsSync(ghPagesBin)) {
-            throw new Error('unable to find gh-pages executable')
+            throw new Error('unable to find gh-pages')
           }
         }
 
@@ -35,8 +35,6 @@ module.exports = (program) => {
 
         await pEachSeries(commands, (args) => {
           return execa.shell(...args)
-          // shell.stdout.pipe(process.stdout)
-          // shell.stderr.pipe(process.stderr)
         })
       } catch (err) {
         program.handleError(err)

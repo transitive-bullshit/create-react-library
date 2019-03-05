@@ -11,10 +11,13 @@
     "node": ">=8",
     "npm": ">=5"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "crl-scripts build",
     "start": "crl-scripts start",
-    "test": "crl-scripts test",
+    "test":   "crl-scripts test",
     "deploy": "crl-scripts deploy",
     "eject": "crl-scripts eject"
   },
@@ -24,7 +27,7 @@
   "devDependencies": {
     "crl-scripts": "^0.0.1"
   },
-  "files": [
-    "dist"
-  ]
+  "eslintConfig": {
+    "extends": "react-app"
+  }
 }
