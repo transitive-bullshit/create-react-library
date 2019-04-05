@@ -25,6 +25,7 @@
 - Supports CSS modules
 - Optional support for TypeScript
 - Sourcemap creation
+- Automated [Semantic Versioning](https://semver.org/) via [`semantic-release`](https://semantic-release.gitbook.io/semantic-release/) (optional)
 - Hundreds of public modules created
 - Thorough documentation :heart_eyes:
 - [Chinese docs](./readme.zh-CN.md) by [@monsterooo](https://github.com/monsterooo)
@@ -107,6 +108,9 @@ npm run deploy
 
 This creates a production build of the example `create-react-app` that showcases your library and then runs `gh-pages` to deploy the resulting bundle.
 
+#### Automated Semantic Versioning
+
+see [docs/semantic-release](./docs/semantic-release)
 
 ## Examples
 
