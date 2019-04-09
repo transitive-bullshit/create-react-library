@@ -11,7 +11,7 @@
     "create-react-library": "index.js"
   },
   "scripts": {
-    "test": "ava -v && standard *.js lib/*.js"
+    "test": "CI=true ava -v *.test.js lib/*.test.js && standard *.js lib/*.js"
   },
   "engines": {
     "node": ">=8",
@@ -49,7 +49,7 @@
     "yaml": "^1.4.0"
   },
   "devDependencies": {
-    "ava": "^1.2.1",
+    "ava": "^1.4.1",
     "rmfr": "^2.0.0",
     "standard": "^12.0.1"
   }
