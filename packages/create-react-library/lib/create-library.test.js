@@ -11,7 +11,7 @@ const tests = [
   {
     name: 'my-test-library',
     author: 'nala',
-    description: 'this is a auto-generated test module. please ignore.',
+    description: 'this is an auto-generated test module. please ignore.',
     repo: 'nala/my-test-library',
     license: 'MIT',
     manager: 'yarn',
@@ -21,7 +21,7 @@ const tests = [
   {
     name: 'my-test-typescript-library',
     author: 'nala',
-    description: 'this is a auto-generated test module. please ignore.',
+    description: 'this is an auto-generated test module. please ignore.',
     repo: 'nala/my-test-library',
     license: 'MIT',
     manager: 'yarn',
@@ -31,7 +31,7 @@ const tests = [
   {
     name: 'my-test-library',
     author: 'nala',
-    description: 'this is a auto-generated test module. please ignore.',
+    description: 'this is an auto-generated test module. please ignore.',
     repo: 'nala/my-test-library',
     license: 'MIT',
     manager: 'npm',
@@ -41,7 +41,7 @@ const tests = [
   {
     name: 'my-test-library',
     author: 'nala',
-    description: 'this is a auto-generated test module. please ignore.',
+    description: 'this is an auto-generated test module. please ignore.',
     repo: 'nala/my-test-typescript-library',
     license: 'MIT',
     manager: 'npm',
@@ -49,9 +49,9 @@ const tests = [
     git: true
   },
   {
-    name: '@automagical/nala',
+    name: '@foo/nala',
     author: 'superstar-cats',
-    description: 'this is a auto-generated test module. please ignore.',
+    description: 'this is an auto-generated test module. please ignore.',
     repo: 'superstar-cats/nala',
     license: 'GPL',
     manager: 'yarn',
@@ -61,7 +61,7 @@ const tests = [
   {
     name: 'no-git-library',
     author: 'nala',
-    description: 'this is a auto-generated test module. please ignore.',
+    description: 'this is an auto-generated test module. please ignore.',
     repo: 'nala/no-git-library',
     license: 'MIT',
     manager: 'yarn',
@@ -71,7 +71,7 @@ const tests = [
   {
     name: 'my-custom-template',
     author: 'nala',
-    description: 'this is a auto-generated test module. please ignore.',
+    description: 'this is an auto-generated test module. please ignore.',
     repo: 'nala/my-custom-template',
     license: 'GPL',
     manager: 'yarn',
