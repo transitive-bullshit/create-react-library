@@ -1,3 +1,5 @@
+// courtesy of https://github.com/developit/microbundle
+
 const chalk = require('chalk')
 const gzipSize = require('gzip-size')
 const path = require('path')

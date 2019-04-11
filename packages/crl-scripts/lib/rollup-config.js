@@ -79,7 +79,7 @@ exports.outputs = () => {
   }
 
   if (!outputs.length) {
-    throw new Error(`invalid package.json missing "main" or "module" field`)
+    throw new Error(`Invalid package.json. Must include either a "main" or "module" field.`)
   }
 
   return outputs
