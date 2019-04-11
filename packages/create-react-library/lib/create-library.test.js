@@ -1,6 +1,6 @@
 'use strict'
 
-const { test } = require('ava')
+const test = require('ava')
 const execa = require('execa')
 const path = require('path')
 const rmfr = require('rmfr')
@@ -81,9 +81,9 @@ const tests = [
   }
 ]
 
-tests.forEach((opts) => {
-  test.serial(`creating "${opts.name}" using ${opts.manager}`, async (t) => {
-    console.log(`creating "${opts.name}" using ${opts.manager}...`)
+tests.forEach((opts, index) => {
+  test.serial(`${index} creating "${opts.name}" using ${opts.manager}`, async (t) => {
+    console.log(`${index} creating "${opts.name}" using ${opts.manager}...`)
     let ret
 
     // ensure library is created successfully

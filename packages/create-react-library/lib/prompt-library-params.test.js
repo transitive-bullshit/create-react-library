@@ -1,6 +1,6 @@
 'use strict'
 
-const { test } = require('ava')
+const test = require('ava')
 
 const promptLibraryParams = require('./prompt-library-params')
 
