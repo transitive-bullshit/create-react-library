@@ -97,7 +97,6 @@ tests.forEach((opts, index) => {
       dest
     })
     const example = path.join(root, 'example')
-    t.truthy(root.indexOf(opts.shortName) >= 0)
 
     // ensure deps install successfully in root
     ret = await execa.shell(`${opts.manager} install`, { cwd: root })
