@@ -3,6 +3,7 @@
 const rollup = require('rollup')
 
 const config = require('../rollup-config')
+const getSizeInfo = require('../get-size-info')
 const spinner = require('../spinner')
 
 module.exports = (program) => {
@@ -11,7 +12,8 @@ module.exports = (program) => {
     .description('Creates a bundle for your library')
     .action(async () => {
       try {
-        const input = config.input()
+        const metadata = { }
+        const input = config.input(metadata)
         const outputs = config.outputs()
 
         const bundle = await spinner(
@@ -24,6 +26,11 @@ module.exports = (program) => {
             bundle.write(output),
             `Generating ${output.format} bundle`
           )
+
+          await getSizeInfo(Object.values(metadata.bundle)[0])
+            .then((text) => {
+              console.log(`Wrote ${text.trim()}`)
+            })
         }
       } catch (err) {
         program.handleError(err)

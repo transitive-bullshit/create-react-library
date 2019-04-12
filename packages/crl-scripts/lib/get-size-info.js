@@ -16,7 +16,7 @@ module.exports = async function getSizeInfo (assetInfo) {
 function formatSize (size, filename, type, raw) {
   const pretty = raw ? `${size} B` : prettyBytes(size)
   const color = size < 5000 ? 'green' : size > 40000 ? 'red' : 'yellow'
-  const MAGIC_INDENTATION = type === 'gz' ? 13 : 10
+  const MAGIC_INDENTATION = type === 'gz' ? 12 : 10
   return `${' '.repeat(MAGIC_INDENTATION - pretty.length)}${chalk[color](
     pretty
   )}: ${chalk.white(path.basename(filename))}${type ? '.' + type : ''}`
