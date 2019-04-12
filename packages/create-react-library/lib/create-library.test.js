@@ -4,6 +4,7 @@ const test = require('ava')
 const execa = require('execa')
 const path = require('path')
 const rmfr = require('rmfr')
+const tempy = require('tempy')
 
 const createLibrary = require('./create-library')
 
@@ -83,11 +84,18 @@ const tests = [
 
 tests.forEach((opts, index) => {
   test.serial(`${index} creating "${opts.name}" using ${opts.manager}`, async (t) => {
+    const dest = tempy.directory()
+
     console.log(`${index} creating "${opts.name}" using ${opts.manager}...`)
+    console.log(dest)
+
     let ret
 
     // ensure library is created successfully
-    const root = await createLibrary(opts)
+    const root = await createLibrary({
+      ...opts,
+      dest
+    })
     const example = path.join(root, 'example')
     t.truthy(root.indexOf(opts.shortName) >= 0)
 

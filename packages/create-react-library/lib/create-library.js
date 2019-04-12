@@ -25,11 +25,17 @@ module.exports = async (info) => {
   } = info
 
   // handle scoped package names
-  const parts = name.split('/')
-  info.shortName = parts[parts.length - 1]
+  if (!info.shortName) {
+    const parts = name.split('/')
+    info.shortName = parts[parts.length - 1]
+  }
 
-  const dest = path.join(process.cwd(), info.shortName)
-  info.dest = dest
+  if (!info.dest) {
+    info.dest = path.join(process.cwd(), info.shortName)
+  }
+
+  const dest = info.dest
+
   await mkdirp(dest)
 
   const source = template === 'custom'
