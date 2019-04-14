@@ -17,13 +17,14 @@ module.exports = async () => {
     .name('create-react-library')
     .version(version)
     .usage('[options] [package-name]')
-    .option('-d, --desc <string>', 'package description')
-    .option('-a, --author <string>', 'author\'s github handle', defaults.author)
-    .option('-l, --license <string>', 'package license', defaults.license)
-    .option('-r, --repo <string>', 'package repo path')
-    .option('-g, --no-git', 'generate without git init')
-    .option('-m, --manager <npm|yarn>', 'package manager to use', /^(npm|yarn)$/, defaults.manager)
-    .option('-s, --skip-prompts', 'skip all prompts (must provide package-name via cli)')
+    .option('-d, --desc <string>', 'Package description')
+    .option('-a, --author <string>', 'Author\'s github handle', defaults.author)
+    .option('-l, --license <string>', 'Package license', defaults.license)
+    .option('-r, --repo <string>', 'Package repo path')
+    .option('-g, --no-git', 'Generate without git init')
+    .option('-m, --manager <npm|yarn>', 'Package manager to use', /^(npm|yarn)$/, defaults.manager)
+    .option('-t, --typescript', 'Add TypeScript support to the generated template')
+    .option('-s, --skip-prompts', 'Skip all prompts (must provide package-name via cli)')
     .parse(process.argv)
 
   const opts = {
@@ -33,6 +34,7 @@ module.exports = async () => {
     repo: program.repo,
     manager: program.manager,
     skipPrompts: program.skipPrompts,
+    typescript: program.typescript,
     git: program.git
   }
 

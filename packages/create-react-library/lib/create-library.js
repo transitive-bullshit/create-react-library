@@ -15,6 +15,17 @@ const templateBlacklist = new Set([
   'example/public/favicon.ico'
 ])
 
+const templateTSBlacklist = new Set([
+  'src/index.js'
+])
+
+const templateTSWhitelist = new Set([
+  'tsconfig.json',
+  'src/index.ts',
+  'src/typings.d.ts',
+  'example/tsconfig.json'
+])
+
 module.exports = async (info) => {
   const {
     manager,
@@ -37,9 +48,7 @@ module.exports = async (info) => {
   await mkdirp(dest)
 
   const source = path.join(__dirname, '..', 'template')
-  const files = await globby(source, {
-    dot: true
-  })
+  const files = await globby(source, { dot: true })
 
   {
     const promise = pEachSeries(files, async (file) => {
@@ -80,6 +89,12 @@ module.exports.copyTemplateFile = async (opts) => {
   const fileRelativePath = path.relative(source, file)
   const destFilePath = path.join(dest, fileRelativePath)
   const destFileDir = path.parse(destFilePath).dir
+
+  if (info.typescript && templateTSBlacklist.has(fileRelativePath)) {
+    return
+  } else if (!info.typescript && templateTSWhitelist.has(fileRelativePath)) {
+    return
+  }
 
   await mkdirp(destFileDir)
 

@@ -72,12 +72,22 @@ module.exports = async (opts) => {
         message: 'Package Manager',
         choices: [ 'npm', 'yarn' ],
         default: opts.manager
+      },
+      {
+        type: 'list',
+        name: 'typescript',
+        message: 'TypeScript?',
+        choices: [ 'typescript', 'javascript' ],
+        default: opts.typescript ? 'typescript' : 'javascript'
       }
     ])
+
+    info.typescript = (info.typescript === 'typescript')
 
     config.set('author', info.author)
     config.set('license', info.license)
     config.set('manager', info.manager)
+    config.set('typescript', info.typescript)
 
     return {
       ...info,
