@@ -23,8 +23,6 @@ module.exports = async () => {
     .option('-r, --repo <string>', 'package repo path')
     .option('-g, --no-git', 'generate without git init')
     .option('-m, --manager <npm|yarn>', 'package manager to use', /^(npm|yarn)$/, defaults.manager)
-    .option('-t, --template <default|typescript>', 'package template to use', /^(default|typescript|custom)$/, defaults.template)
-    .option('-p, --template-path <string>', 'custom package template path')
     .option('-s, --skip-prompts', 'skip all prompts (must provide package-name via cli)')
     .parse(process.argv)
 
@@ -34,8 +32,6 @@ module.exports = async () => {
     license: program.license,
     repo: program.repo,
     manager: program.manager,
-    template: program.template,
-    templatePath: program.templatePath,
     skipPrompts: program.skipPrompts,
     git: program.git
   }

@@ -1,7 +1,5 @@
 'use strict'
 
-const path = require('path')
-const fs = require('fs')
 const inquirer = require('inquirer')
 const validateNpmName = require('validate-npm-package-name')
 
@@ -66,36 +64,12 @@ module.exports = async (opts) => {
         message: 'Package Manager',
         choices: [ 'npm', 'yarn' ],
         default: opts.manager
-      },
-      {
-        type: 'list',
-        name: 'template',
-        message: 'Template',
-        choices: [ 'default', 'typescript', 'custom' ],
-        default: opts.template
-      },
-      {
-        type: 'input',
-        name: 'templatePath',
-        message: 'Template Path',
-        default: opts.templatePath,
-        when: ({ template }) => template === 'custom',
-        validate: input => new Promise(resolve => {
-          const fullPath = path.resolve(process.cwd(), input)
-          fs.stat(fullPath, (err, stats) => {
-            if (err) {
-              return resolve(`Cannot resolve directory at: ${fullPath}`)
-            }
-            resolve(true)
-          })
-        })
       }
     ])
 
     config.set('author', info.author)
     config.set('license', info.license)
     config.set('manager', info.manager)
-    config.set('template', info.template)
 
     return {
       ...info,

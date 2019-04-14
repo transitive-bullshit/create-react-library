@@ -18,9 +18,7 @@ const templateBlacklist = new Set([
 module.exports = async (info) => {
   const {
     manager,
-    template,
     name,
-    templatePath,
     git
   } = info
 
@@ -38,9 +36,7 @@ module.exports = async (info) => {
 
   await mkdirp(dest)
 
-  const source = template === 'custom'
-    ? path.join(process.cwd(), templatePath)
-    : path.join(__dirname, '..', 'template', template)
+  const source = path.join(__dirname, '..', 'template')
   const files = await globby(source, {
     dot: true
   })
@@ -54,7 +50,7 @@ module.exports = async (info) => {
         info
       })
     })
-    ora.promise(promise, `Copying ${template} template to ${dest}`)
+    ora.promise(promise, `Copying template to ${dest}`)
     await promise
   }
 

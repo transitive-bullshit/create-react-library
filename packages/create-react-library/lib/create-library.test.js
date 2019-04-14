@@ -10,76 +10,34 @@ const createLibrary = require('./create-library')
 
 const tests = [
   {
-    name: 'my-test-library',
+    name: 'my-test-library-yarn',
     author: 'nala',
     description: 'this is an auto-generated test module. please ignore.',
     repo: 'nala/my-test-library',
     license: 'MIT',
     manager: 'yarn',
-    template: 'default',
-    git: true
-  },
-  {
-    name: 'my-test-typescript-library',
-    author: 'nala',
-    description: 'this is an auto-generated test module. please ignore.',
-    repo: 'nala/my-test-library',
-    license: 'MIT',
-    manager: 'yarn',
-    template: 'typescript',
-    git: true
-  },
-  {
-    name: 'my-test-library',
-    author: 'nala',
-    description: 'this is an auto-generated test module. please ignore.',
-    repo: 'nala/my-test-library',
-    license: 'MIT',
-    manager: 'npm',
-    template: 'default',
-    git: true
-  },
-  {
-    name: 'my-test-library',
-    author: 'nala',
-    description: 'this is an auto-generated test module. please ignore.',
-    repo: 'nala/my-test-typescript-library',
-    license: 'MIT',
-    manager: 'npm',
-    template: 'typescript',
-    git: true
-  },
-  {
-    name: '@foo/nala',
-    author: 'superstar-cats',
-    description: 'this is an auto-generated test module. please ignore.',
-    repo: 'superstar-cats/nala',
-    license: 'GPL',
-    manager: 'yarn',
-    template: 'default',
-    git: true
-  },
-  {
-    name: 'no-git-library',
-    author: 'nala',
-    description: 'this is an auto-generated test module. please ignore.',
-    repo: 'nala/no-git-library',
-    license: 'MIT',
-    manager: 'yarn',
-    template: 'default',
-    git: false
-  },
-  {
-    name: 'my-custom-template',
-    author: 'nala',
-    description: 'this is an auto-generated test module. please ignore.',
-    repo: 'nala/my-custom-template',
-    license: 'GPL',
-    manager: 'yarn',
-    template: 'custom',
-    templatePath: './template/default',
     git: true
   }
+  /*,
+  {
+    name: 'my-test-library-yarn-ts',
+    author: 'nala',
+    description: 'this is an auto-generated test module. please ignore.',
+    repo: 'nala/my-test-library',
+    license: 'GPL',
+    manager: 'yarn',
+    git: true
+  },
+  {
+    name: 'my-test-library-npm',
+    author: 'nala',
+    description: 'this is an auto-generated test module. please ignore.',
+    repo: 'nala/my-test-library',
+    license: 'MIT',
+    manager: 'npm',
+    git: false
+  }
+  */
 ]
 
 tests.forEach((opts, index) => {

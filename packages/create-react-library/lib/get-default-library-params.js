@@ -14,8 +14,7 @@ module.exports = async () => {
     author: config.get('author'),
     repo: (info) => `${info.author}/${info.name}`,
     license: config.get('license', 'MIT'),
-    manager: config.get('manager', 'npm'),
-    template: config.get('template', 'default')
+    manager: config.get('manager', 'npm')
   }
 
   try {
@@ -43,10 +42,6 @@ module.exports = async () => {
       }
 
       config.set('manager', defaults.manager)
-    }
-
-    if (!config.get('template')) {
-      config.set('template', defaults.template)
     }
   } catch (err) { }
 
