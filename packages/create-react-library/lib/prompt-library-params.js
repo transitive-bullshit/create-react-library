@@ -6,23 +6,31 @@ const validateNpmName = require('validate-npm-package-name')
 const config = require('./config')
 
 module.exports = async (opts) => {
+  const {
+    skipPrompts,
+    ...rest
+  } = opts
+
   if (opts.name && !validateNpmName(opts.name).validForNewPackages) {
     throw new Error(`invalid package name "${opts.name}"`)
   }
 
-  if (opts.skipPrompts) {
+  if (skipPrompts) {
     if (!opts.name) {
       throw new Error('invalid input; you must pass a package name with --skip-prompts')
     }
+    const info = {}
 
-    Object.keys(opts).forEach((key) => {
-      const value = opts[key]
+    Object.keys(rest).forEach((key) => {
+      const value = rest[key]
       if (typeof value === 'function') {
-        opts[key] = value(opts)
+        info[key] = value(rest)
+      } else {
+        info[key] = value
       }
     })
 
-    return opts
+    return info
   } else {
     const info = await inquirer.prompt([
       {

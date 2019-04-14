@@ -6,7 +6,7 @@ const path = require('path')
 const rmfr = require('rmfr')
 const tempy = require('tempy')
 
-const createLibrary = require('./create-library')
+const createLibrary = require('../lib/create-library')
 
 const tests = [
   {

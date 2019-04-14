@@ -2,7 +2,7 @@
 
 const test = require('ava')
 
-const promptLibraryParams = require('./prompt-library-params')
+const promptLibraryParams = require('../lib/prompt-library-params')
 
 const opts = {
   name: 'my-custom-template',

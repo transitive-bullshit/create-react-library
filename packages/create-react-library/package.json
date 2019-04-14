@@ -10,7 +10,7 @@
     "create-react-library": "index.js"
   },
   "scripts": {
-    "test": "ava -v && standard *.js lib/*.js"
+    "test": "ava -v && standard"
   },
   "engines": {
     "node": ">=8",
@@ -54,6 +54,6 @@
     "tempy": "^0.2.1"
   },
   "ava": {
-    "files": "lib/**/*.test.js"
+    "files": "tests/**/*.test.js"
   }
 }

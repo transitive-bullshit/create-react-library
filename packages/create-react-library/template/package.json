@@ -17,7 +17,7 @@
   "scripts": {
     "build": "crl-scripts build",
     "start": "crl-scripts start",
-    "test":   "crl-scripts test",
+    "test": "crl-scripts test",
     "deploy": "crl-scripts deploy",
     "eject": "crl-scripts eject",
     "prepare": "crl-scripts build"
