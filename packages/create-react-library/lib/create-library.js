@@ -21,7 +21,7 @@ const templateTSBlacklist = new Set([
 
 const templateTSWhitelist = new Set([
   'tsconfig.json',
-  'src/index.ts',
+  'src/index.tsx',
   'src/typings.d.ts',
   'example/tsconfig.json'
 ])
