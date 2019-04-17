@@ -1,6 +1,6 @@
 {
   "name": "crl-scripts",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Configuration and build scripts for Create React Library packages.",
   "repository": "transitive-bullshit/create-react-library",
   "author": "Travis Fischer <travis@transitivebullsh.it>",
