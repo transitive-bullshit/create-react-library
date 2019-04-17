@@ -17,7 +17,8 @@ const tests = [
     license: 'MIT',
     manager: 'yarn',
     git: true
-  },
+  }
+  /*,
   {
     name: 'my-test-library-yarn-ts',
     author: 'nala',
@@ -36,6 +37,7 @@ const tests = [
     manager: 'npm',
     git: false
   }
+  */
 ]
 
 tests.forEach((opts, index) => {

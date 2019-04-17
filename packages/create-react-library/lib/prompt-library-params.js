@@ -75,14 +75,14 @@ module.exports = async (opts) => {
       },
       {
         type: 'list',
-        name: 'typescript',
-        message: 'TypeScript?',
-        choices: [ 'typescript', 'javascript' ],
-        default: opts.typescript ? 'typescript' : 'javascript'
+        name: 'language',
+        message: 'Language?',
+        choices: [ 'TypeScript', 'JavaScript' ],
+        default: opts.typescript ? 'TypeScript' : 'JavaScript'
       }
     ])
 
-    info.typescript = (info.typescript === 'typescript')
+    info.typescript = (info.language === 'TypeScript')
 
     config.set('author', info.author)
     config.set('license', info.license)

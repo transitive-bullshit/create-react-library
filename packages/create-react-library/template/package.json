@@ -1,9 +1,9 @@
 {
   "name": "{{name}}",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "{{description}}",
-  "author": "{{author}}",
   "license": "{{license}}",
+  "author": "{{author}}",
   "repository": "{{repo}}",
   "main": "build/index.js",
   "module": "build/index.es.js",
@@ -32,7 +32,8 @@
     {{#if typescript}}"@types/jest": "^24.0.11",{{/if}}
     {{#if typescript}}"@types/react": "^16.8.13",{{/if}}
     {{#if typescript}}"@types/react-dom": "^16.8.4",{{/if}}
-    "crl-scripts": "^0.0.1"
+    "crl-scripts": "^0.0.2",
+    "react": "^16.8.6"
   },
   "eslintConfig": {
     "extends": "react-app"
