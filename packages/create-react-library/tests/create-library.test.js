@@ -57,18 +57,22 @@ tests.forEach((opts, index) => {
     const example = path.join(root, 'example')
 
     // ensure deps install successfully in root
+    console.log(opts.name, opts.manager, 'install')
     ret = await execa.shell(`${opts.manager} install`, { cwd: root })
     t.is(ret.code, 0)
 
     // ensure root tests pass
+    console.log(opts.name, opts.manager, 'test')
     ret = await execa.shell(`${opts.manager} test`, { cwd: root })
     t.is(ret.code, 0)
 
     // ensure deps install successfully in example
+    console.log(opts.name, '(example)', opts.manager, 'install')
     ret = await execa.shell(`${opts.manager} install`, { cwd: example })
     t.is(ret.code, 0)
 
     // ensure bundle builds successfully in example
+    console.log(opts.name, '(example)', opts.manager, 'build')
     ret = await execa.shell(`${opts.manager} build`, { cwd: example })
     t.is(ret.code, 0)
 

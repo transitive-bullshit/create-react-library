@@ -55,5 +55,10 @@
   },
   "ava": {
     "files": "tests/**/*.test.js"
+  },
+  "standard": {
+    "ignore": [
+      "template"
+    ]
   }
 }
