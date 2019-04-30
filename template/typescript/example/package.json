@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "react": "link:../node_modules/react",
-    "react-dom": "link:../node_modules/react-dom",
+    "react": "{{#if yarn}}link:..{{else}}file:..{{/if}}/node_modules/react",
+    "react-dom": "{{#if yarn}}link:..{{else}}file:..{{/if}}/node_modules/react-dom",
     "react-scripts": "2.0.4",
     "{{name}}": "{{#if yarn}}link:..{{else}}file:..{{/if}}"
   },
