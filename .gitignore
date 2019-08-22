@@ -22,3 +22,4 @@ yarn-error.log*
 # temp directories created during testing
 my-test-library
 nala
+*.iml
