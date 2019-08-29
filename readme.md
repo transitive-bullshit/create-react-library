@@ -30,6 +30,11 @@
 - [Chinese docs](./readme.zh-CN.md) by [@monsterooo](https://github.com/monsterooo)
 
 
+## Notice
+
+This is now an [OPEN Open Source](http://openopensource.org/) project. I am not able to invest a significant amount of time into maintaining CRL and so am looking for volunteers who would like to be active maintainers of the project. If you are interested, shoot me a note.
+
+
 ## Install globally
 
 This package requires `node >= 4`, but we recommend `node >= 8`.
