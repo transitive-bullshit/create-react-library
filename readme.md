@@ -149,7 +149,9 @@ Here are some example libraries that have been bootstrapped with `create-react-l
 - [react-editext](https://github.com/alioguzhan/react-editext) - Editable Text Component.
 - ... and hundreds more!
 
-Want to add yours to the list? Submit an [issue](https://github.com/transitive-bullshit/create-react-library/issues/new).
+Want to see a more completed list? Check out [Made with CRL](https://made-with-crl.netlify.com/)
+
+Want to add yours to the list? Submit an [PR](https://github.com/HurricaneInteractive/made-with-crl#adding-a-library) at the _Made with CRL_ repository.
 
 
 ## License
