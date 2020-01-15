@@ -34,7 +34,7 @@
 
 ## 安装
 
-这个包必须依赖 `node >= 4`, 但是我们推荐 `node >= 8`.
+此套餐要求 `node >= 10`.
 
 ```bash
 npm install -g create-react-library

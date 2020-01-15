@@ -7,7 +7,7 @@
   "author": "Travis Fischer <travis@transitivebullsh.it>",
   "license": "MIT",
   "engines": {
-    "node": ">=12"
+    "node": ">=10"
   },
   "scripts": {
     "test": "run-s test:*",

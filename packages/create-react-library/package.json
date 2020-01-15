@@ -13,7 +13,7 @@
     "test": "ava -v && standard"
   },
   "engines": {
-    "node": ">=12",
+    "node": ">=10",
     "npm": ">=5"
   },
   "keywords": [
