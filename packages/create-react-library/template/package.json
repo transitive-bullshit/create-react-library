@@ -23,7 +23,7 @@
     "prepare": "crl-scripts build"
   },
   "peerDependencies": {
-    "react": ">=16"
+    "react": ">=16.8"
   },
   "dependencies": {
     "prop-types": "^15.7.2"
