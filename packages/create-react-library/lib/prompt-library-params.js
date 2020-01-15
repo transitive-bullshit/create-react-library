@@ -36,7 +36,7 @@ module.exports = async (opts) => {
       {
         type: 'input',
         name: 'name',
-        message: 'Package Name',
+        message: 'Package Name //test',
         validate: (name) => {
           return name && validateNpmName(name).validForNewPackages
         },
@@ -70,14 +70,14 @@ module.exports = async (opts) => {
         type: 'list',
         name: 'manager',
         message: 'Package Manager',
-        choices: [ 'npm', 'yarn' ],
+        choices: ['npm', 'yarn'],
         default: opts.manager
       },
       {
         type: 'list',
         name: 'language',
         message: 'Language?',
-        choices: [ 'TypeScript', 'JavaScript' ],
+        choices: ['TypeScript', 'JavaScript'],
         default: opts.typescript ? 'TypeScript' : 'JavaScript'
       }
     ])

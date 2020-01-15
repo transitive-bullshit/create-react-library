@@ -34,7 +34,7 @@ module.exports = (program) => {
         ]
 
         await pEachSeries(commands, (args) => {
-          return execa.shell(...args)
+          return execa(...args, {shell: true})
         })
       } catch (err) {
         program.handleError(err)

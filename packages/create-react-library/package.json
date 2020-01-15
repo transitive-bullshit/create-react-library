@@ -13,7 +13,7 @@
     "test": "ava -v && standard"
   },
   "engines": {
-    "node": ">=8",
+    "node": ">=12",
     "npm": ">=5"
   },
   "keywords": [
@@ -30,31 +30,31 @@
     "publish"
   ],
   "dependencies": {
-    "chalk": "^2.4.2",
-    "commander": "^2.20.0",
-    "conf": "^2.2.0",
-    "cp-file": "^6.2.0",
-    "execa": "^1.0.0",
+    "chalk": "^3.0.0",
+    "commander": "^4.1.0",
+    "conf": "^6.2.0",
+    "cp-file": "^7.0.0",
+    "execa": "^4.0.0",
     "git-config-path": "^2.0.0",
-    "github-username": "^4.1.0",
-    "globby": "^9.2.0",
-    "handlebars": "^4.1.1",
-    "inquirer": "^6.2.2",
+    "github-username": "^5.0.1",
+    "globby": "^11.0.0",
+    "handlebars": "^4.7.2",
+    "inquirer": "^7.0.3",
     "make-dir": "^3.0.0",
-    "ora": "^3.4.0",
+    "ora": "^4.0.3",
     "p-each-series": "^2.1.0",
     "parse-git-config": "^3.0.0",
     "validate-npm-package-name": "^3.0.0",
-    "which": "^1.3.1"
+    "which": "^2.0.2"
   },
   "devDependencies": {
-    "ava": "^1.4.1",
+    "ava": "^2.4.0",
     "rmfr": "^2.0.0",
-    "standard": "^12.0.1",
-    "tempy": "^0.2.1"
+    "standard": "^14.3.1",
+    "tempy": "^0.3.0"
   },
   "ava": {
-    "files": "tests/**/*.test.js"
+    "files": ["tests/**/*.test.js"]
   },
   "standard": {
     "ignore": [
