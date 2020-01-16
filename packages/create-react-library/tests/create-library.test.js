@@ -58,26 +58,26 @@ tests.forEach((opts, index) => {
 
     // ensure deps install successfully in root
     console.log(opts.name, opts.manager, 'install')
-    ret = await execa.shell(`${opts.manager} install`, { cwd: root })
-    t.is(ret.code, 0)
+    ret = await execa(`${opts.manager} install`, { cwd: root, shell: true })
+    t.is(ret.exitCode, 0)
 
     // ensure root tests pass
     console.log(opts.name, opts.manager, 'test')
-    ret = await execa.shell(`${opts.manager} test`, { cwd: root })
-    t.is(ret.code, 0)
+    ret = await execa(`${opts.manager} test`, { cwd: root, shell: true })
+    t.is(ret.exitCode, 0)
 
     // ensure deps install successfully in example
     console.log(opts.name, '(example)', opts.manager, 'install')
-    ret = await execa.shell(`${opts.manager} install`, { cwd: example })
-    t.is(ret.code, 0)
+    ret = await execa(`${opts.manager} install`, { cwd: example, shell: true })
+    t.is(ret.exitCode, 0)
 
     // ensure bundle builds successfully in example
     console.log(opts.name, '(example)', opts.manager, 'build')
-    ret = await execa.shell(`${opts.manager} build`, { cwd: example })
-    t.is(ret.code, 0)
+    ret = await execa(`${opts.manager} build`, { cwd: example, shell: true })
+    t.is(ret.exitCode, 0)
 
     // ensure git is initialized properly
-    ret = await execa.shell('git rev-parse --git-dir', { cwd: root })
+    ret = await execa('git rev-parse --git-dir', { cwd: root, shell: true })
     t.is(ret.stdout, opts.git ? '.git' : path.join(process.cwd(), '.git'))
 
     await rmfr(root)

@@ -138,7 +138,7 @@ module.exports.initPackageManager = async (opts) => {
   ]
 
   return pEachSeries(commands, async ({ cmd, cwd }) => {
-    return execa.shell(cmd, { cwd })
+    return execa(cmd, { cwd, shell: true })
   })
 }
 
@@ -173,5 +173,5 @@ yarn-error.log*
 `, 'utf8')
 
   const cmd = `git init && git add . && git commit -m "init ${pkg.name}@${pkg.version}"`
-  return execa.shell(cmd, { cwd: dest })
+  return execa(cmd, { cwd: dest, shell: true })
 }

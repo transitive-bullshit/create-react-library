@@ -37,7 +37,7 @@ This is now an [OPEN Open Source](http://openopensource.org/) project. I am not 
 
 ## Install globally
 
-This package requires `node >= 8`.
+This package requires `node >= 10`.
 
 ```bash
 npm install -g create-react-library

@@ -23,7 +23,7 @@ module.exports = (program) => {
           }
         }
 
-        await execa.shell(`CI=true SKIP_PREFLIGHT_CHECK=true ${reactScriptsBin} test`, { cwd: process.cwd() })
+        await execa(`CI=true SKIP_PREFLIGHT_CHECK=true ${reactScriptsBin} test`, { cwd: process.cwd(), shell: true })
       } catch (err) {
         program.handleError(err)
       }
