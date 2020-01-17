@@ -36,7 +36,7 @@ module.exports = async (opts) => {
       {
         type: 'input',
         name: 'name',
-        message: 'Package Name //test',
+        message: 'Package Name',
         validate: (name) => {
           return name && validateNpmName(name).validForNewPackages
         },
