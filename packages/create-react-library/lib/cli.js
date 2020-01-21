@@ -15,7 +15,7 @@ module.exports = async () => {
 
   program
     .name('create-react-library')
-    .version(version)
+    .version(version, '-v, --version')
     .usage('[options] [package-name]')
     .option('-d, --desc <string>', 'Package description')
     .option('-a, --author <string>', 'Author\'s github handle', defaults.author)
