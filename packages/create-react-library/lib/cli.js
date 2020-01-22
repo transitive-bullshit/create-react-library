@@ -60,10 +60,8 @@ module.exports = async () => {
 Your module has been created at ${dest}.
 
 To get started, in one tab, run:
-$ ${chalk.cyan(`cd ${params.shortName} && ${params.manager} start`)}
+$ ${chalk.cyan(`cd ${params.shortName} && ${params.manager} run develop`)}
 
-And in another tab, run the create-react-app dev server:
-$ ${chalk.cyan(`cd ${path.join(params.shortName, 'example')} && ${params.manager} start`)}
 `)
 
   return dest

@@ -20,7 +20,8 @@
     "test": "crl-scripts test",
     "deploy": "crl-scripts deploy",
     "eject": "crl-scripts eject",
-    "prepare": "crl-scripts build"
+    "prepare": "crl-scripts build",
+    "develop": "crl-scripts develop"
   },
   "peerDependencies": {
     "react": ">=16.8"
