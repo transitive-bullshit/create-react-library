@@ -114,7 +114,7 @@ This creates a production build of the example `create-react-app` that showcases
 
 ## Use with React Hooks
 
-If you use [react-hooks](https://reactjs.org/docs/hooks-intro.html) in your project, when you debug you example you may run into a exception [Invalid Hook Call Warning](https://reactjs.org/warnings/invalid-hook-call-warning.html). This [issue](https://github.com/facebook/react/issues/14257) explain the reason, your lib and example use different instance, one solution is rewrite the `react` path in your example `package.json` to 'file:../node_modules/react' or 'link:../node_modules/react'.
+If you use [react-hooks](https://reactjs.org/docs/hooks-intro.html) in your project, when you debug your example you may run into an exception [Invalid Hook Call Warning](https://reactjs.org/warnings/invalid-hook-call-warning.html). This [issue](https://github.com/facebook/react/issues/14257) explains the reason, your lib and example use a different instance, one solution is rewrite the `react` path in your example's `package.json` to 'file:../node_modules/react' or 'link:../node_modules/react'.
 
 ## Examples
 
