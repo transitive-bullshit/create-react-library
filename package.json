@@ -32,7 +32,6 @@
   "dependencies": {
     "chalk": "^2.4.2",
     "commander": "^2.19.0",
-    "conf": "^2.2.0",
     "cp-file": "^6.0.0",
     "execa": "^1.0.0",
     "git-config-path": "^2.0.0",
