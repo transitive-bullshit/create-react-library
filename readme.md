@@ -7,11 +7,11 @@
 ---
 
 <div align="center">
-	<sup>This project is sponsored by Saasify.</sup>
 	<a href="https://saasify.sh" title="Saasify">
 		<div>
-      <img src="https://docs.saasify.sh/_media/logo.png" alt="Saasify Logo" width="256" />
+      <img src="https://docs.saasify.sh/_media/logo.png" alt="Saasify Logo" width="200" />
 		</div>
+    <sup>This project is sponsored by Saasify.</sup>
 		<sup><b>The easiest way to monetize your APIs</b></sup>
 	</a>
 </div>
