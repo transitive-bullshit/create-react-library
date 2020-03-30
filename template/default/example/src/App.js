@@ -1,10 +1,10 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import './App.css'
 
-import { ExampleComponent } from '{{name}}';
+import { ExampleComponent } from '{{name}}'
 
 const App = () => {
-  return <ExampleComponent text='Modern React component module' />;
-};
+  return <ExampleComponent text="Create React Library Example 😄" />
+}
 
-export default App;
+export default App

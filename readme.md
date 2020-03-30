@@ -4,13 +4,11 @@
 
 [![NPM](https://img.shields.io/npm/v/create-react-library.svg)](https://www.npmjs.com/package/create-react-library) [![Build Status](https://travis-ci.com/transitive-bullshit/create-react-library.svg?branch=master)](https://travis-ci.com/transitive-bullshit/create-react-library) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-
 ## Intro
 
 <p align="center">
   <img width="600" src="https://cdn.rawgit.com/transitive-bullshit/create-react-library/master/media/demo.svg">
 </p>
-
 
 ## Features
 
@@ -29,15 +27,13 @@
 - Thorough documentation :heart_eyes:
 - [Chinese docs](./readme.zh-CN.md) by [@monsterooo](https://github.com/monsterooo)
 
-
 ## Notice
 
-This is now an [OPEN Open Source](http://openopensource.org/) project. I am not able to invest a significant amount of time into maintaining CRL and so am looking for volunteers who would like to be active maintainers of the project. If you are interested, shoot me a note.
-
+My open source efforts are now focused on [Saasify](https://github.com/saasify-sh/saasify), and I am not able to invest a significant amount of time into maintaining CRL anymore. I am looking for volunteers who would like to become active maintainers of the project. If you are interested, please shoot me a note.
 
 ## Install globally
 
-This package requires `node >= 4`, but we recommend `node >= 8`.
+This package requires `node >= 10`.
 
 ```bash
 npm install -g create-react-library
@@ -58,6 +54,7 @@ create-react-library
 ```
 
 Answer some basic prompts about your module, and then the CLI will perform the following steps:
+
 - copy over the template
 - install dependencies via yarn or npm
 - link packages together for local development
@@ -68,7 +65,6 @@ At this point, your new module should resemble this screenshot and is all setup 
 <p align="center">
   <img width="600" src="https://cdn.rawgit.com/transitive-bullshit/create-react-library/master/media/tree.svg">
 </p>
-
 
 ## Development
 
@@ -92,7 +88,6 @@ Now, anytime you make a change to your library in `src/` or to the example app's
 
 ![](https://media.giphy.com/media/12NUbkX6p4xOO4/giphy.gif)
 
-
 #### Publishing to npm
 
 ```bash
@@ -102,7 +97,6 @@ npm publish
 This builds `cjs` and `es` versions of your module to `dist/` and then publishes your module to `npm`.
 
 Make sure that any npm modules you want as peer dependencies are properly marked as `peerDependencies` in `package.json`. The rollup config will automatically recognize them as peers and not try to bundle them in your module.
-
 
 #### Deploying to Github Pages
 
@@ -152,7 +146,6 @@ Here are some example libraries that have been bootstrapped with `create-react-l
 Want to see a more completed list? Check out [Made with CRL](https://made-with-crl.netlify.com/)
 
 Want to add yours to the list? Submit an [PR](https://github.com/HurricaneInteractive/made-with-crl#adding-a-library) at the _Made with CRL_ repository.
-
 
 ## License
 

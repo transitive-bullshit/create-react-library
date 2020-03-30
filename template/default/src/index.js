@@ -1,14 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import styles from './styles.css'
 
-import styles from './styles.css';
-
-export const ExampleComponent = () => {
-  const { text } = this.props;
-
-  return <div className={styles.test}>Example Component: {text}</div>;
-};
-
-ExampleComponent.propTypes = {
-  text: PropTypes.string
-};
+export const ExampleComponent = ({ text }) => {
+  return <div className={styles.test}>Example Component: {text}</div>
+}
