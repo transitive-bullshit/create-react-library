@@ -4,6 +4,20 @@
 
 [![NPM](https://img.shields.io/npm/v/create-react-library.svg)](https://www.npmjs.com/package/create-react-library) [![Build Status](https://travis-ci.com/transitive-bullshit/create-react-library.svg?branch=master)](https://travis-ci.com/transitive-bullshit/create-react-library) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+---
+
+<div align="center">
+	<sup>This project is sponsored by Saasify.</sup>
+	<a href="https://saasify.sh" title="Saasify">
+		<div>
+      <img src="https://docs.saasify.sh/_media/logo.png" alt="Saasify Logo" width="256" />
+		</div>
+		<sup><b>The easiest way to monetize your APIs</b></sup>
+	</a>
+</div>
+
+---
+
 ## Intro
 
 <p align="center">
@@ -26,10 +40,6 @@
 - Thousands of public modules created
 - Thorough documentation :heart_eyes:
 - [Chinese docs](./readme.zh-CN.md) by [@monsterooo](https://github.com/monsterooo)
-
-## Notice
-
-My open source efforts are now focused on [Saasify](https://github.com/saasify-sh/saasify), and I am not able to invest a significant amount of time into maintaining CRL anymore. I am looking for volunteers who would like to become active maintainers of the project. If you are interested, please shoot me a note.
 
 ## Install globally
 
@@ -146,6 +156,10 @@ Here are some example libraries that have been bootstrapped with `create-react-l
 Want to see a more completed list? Check out [Made with CRL](https://made-with-crl.netlify.com/)
 
 Want to add yours to the list? Submit an [PR](https://github.com/HurricaneInteractive/made-with-crl#adding-a-library) at the _Made with CRL_ repository.
+
+## Notice
+
+My open source efforts are now focused on [Saasify](https://github.com/saasify-sh/saasify), and I am not able to invest a significant amount of time into maintaining CRL anymore. I am looking for volunteers who would like to become active maintainers on the project. If you are interested, please shoot me a note.
 
 ## License
 
