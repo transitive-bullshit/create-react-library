@@ -6,14 +6,14 @@
   "license": "{{license}}",
   "repository": "{{repo}}",
   "main": "dist/index.js",
-  "module": "dist/index.es.js",
-  "source": "src/index.ts",
+  "module": "dist/index.modern.js",
+  "source": "src/index.tsx",
   "engines": {
     "node": ">=10"
   },
   "scripts": {
-    "build": "microbundle --no-compress --format modern,cjs",
-    "start": "microbundle watch --no-compress --format modern,cjs",
+    "build": "microbundle-crl --no-compress --format modern,cjs",
+    "start": "microbundle-crl watch --no-compress --format modern,cjs",
     "prepublish": "run-s build",
     "test": "run-s test:unit test:lint test:build",
     "test:build": "run-s build",
@@ -27,7 +27,8 @@
     "react": "^16.0.0"
   },
   "devDependencies": {
-    "@saasify/microbundle": "^0.13.7",
+    "@types/react": "^16.9.27",
+    "microbundle-crl": "^0.13.8",
     "babel-eslint": "^10.0.3",
     "cross-env": "^7.0.2",
     "eslint": "^6.8.0",
