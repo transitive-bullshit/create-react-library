@@ -1,12 +1,10 @@
-import React, { Component } from 'react';
-import './App.css';
+import React from 'react'
 
-import ExampleComponent from '{{name}}';
+import { ExampleComponent } from '{{name}}'
+import '{{name}/dist/index.css'
 
-class App extends Component {
-  render() {
-    return <ExampleComponent text='Modern React component module' />;
-  }
+const App = () => {
+  return <ExampleComponent text="Create React Library Example 😄" />
 }
 
-export default App;
+export default App

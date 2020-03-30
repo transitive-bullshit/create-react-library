@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-scripts": "2.0.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1",
     "{{name}}": "{{#if yarn}}link:..{{else}}file:..{{/if}}"
   },
   "scripts": {

@@ -14,7 +14,7 @@
 
 - Easy-to-use CLI
 - Handles all modern JS features
-- Bundles `cjs` and `es` module formats
+- Bundles `commonjs` and `es` module formats
 - [create-react-app](https://github.com/facebookincubator/create-react-app) for example usage and local dev
 - [Rollup](https://rollupjs.org/) for bundling
 - [Babel](https://babeljs.io/) for transpiling
@@ -23,7 +23,7 @@
 - Supports CSS modules
 - Optional support for TypeScript
 - Sourcemap creation
-- Hundreds of public modules created
+- Thousands of public modules created
 - Thorough documentation :heart_eyes:
 - [Chinese docs](./readme.zh-CN.md) by [@monsterooo](https://github.com/monsterooo)
 
@@ -94,7 +94,7 @@ Now, anytime you make a change to your library in `src/` or to the example app's
 npm publish
 ```
 
-This builds `cjs` and `es` versions of your module to `dist/` and then publishes your module to `npm`.
+This builds `commonjs` and `es` versions of your module to `dist/` and then publishes your module to `npm`.
 
 Make sure that any npm modules you want as peer dependencies are properly marked as `peerDependencies` in `package.json`. The rollup config will automatically recognize them as peers and not try to bundle them in your module.
 
