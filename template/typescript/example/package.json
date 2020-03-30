@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.1",
-    "{{name}}": "{{#if yarn}}link:..{{else}}file:..{{/if}}"
+    "react": "{{#if yarn}}link:..{{else}}file:..{{/if}}/node_modules/react",
+    "react-dom": "{{#if yarn}}link:..{{else}}file:..{{/if}}/node_modules/react-dom",
+    "{{name}}": "{{#if yarn}}link:..{{else}}file:..{{/if}}",
+    "react-scripts": "^3.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
