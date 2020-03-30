@@ -50,5 +50,13 @@
     "ava": "^3.5.2",
     "rmfr": "^2.0.0",
     "standard": "^14.3.3"
+  },
+  "ava": {
+    "failFast": true,
+    "timeout": "10m",
+    "files": [
+      "index.test.js",
+      "lib/**/*.test.js"
+    ]
   }
 }
