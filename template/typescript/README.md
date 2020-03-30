@@ -16,12 +16,11 @@ npm install --save {{name}}
 import React, { Component } from 'react'
 
 import MyComponent from '{{name}}'
+import '{{name}}/dist/index.css'
 
 class Example extends Component {
-  render () {
-    return (
-      <MyComponent />
-    )
+  render() {
+    return <MyComponent />
   }
 }
 ```

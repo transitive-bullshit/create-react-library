@@ -4,6 +4,19 @@
 
 [![NPM](https://img.shields.io/npm/v/create-react-library.svg)](https://www.npmjs.com/package/create-react-library) [![Build Status](https://travis-ci.com/transitive-bullshit/create-react-library.svg?branch=master)](https://travis-ci.com/transitive-bullshit/create-react-library) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+---
+
+<div align="center">
+	<a href="https://saasify.sh" title="Saasify">
+		<div>
+      <img src="https://docs.saasify.sh/_media/logo.png" alt="Saasify Logo" width="200" />
+		</div>
+    <sup>This project is sponsored by Saasify.</sup><br />
+		<sup><b>The easiest way to monetize your APIs</b></sup>
+	</a>
+</div>
+
+---
 
 ## Intro
 
@@ -11,12 +24,11 @@
   <img width="600" src="https://cdn.rawgit.com/transitive-bullshit/create-react-library/master/media/demo.svg">
 </p>
 
-
 ## Features
 
 - Easy-to-use CLI
 - Handles all modern JS features
-- Bundles `cjs` and `es` module formats
+- Bundles `commonjs` and `es` module formats
 - [create-react-app](https://github.com/facebookincubator/create-react-app) for example usage and local dev
 - [Rollup](https://rollupjs.org/) for bundling
 - [Babel](https://babeljs.io/) for transpiling
@@ -25,14 +37,13 @@
 - Supports CSS modules
 - Optional support for TypeScript
 - Sourcemap creation
-- Hundreds of public modules created
+- Thousands of public modules created
 - Thorough documentation :heart_eyes:
 - [Chinese docs](./readme.zh-CN.md) by [@monsterooo](https://github.com/monsterooo)
 
-
 ## Install globally
 
-This package requires `node >= 4`, but we recommend `node >= 8`.
+This package requires `node >= 10`.
 
 ```bash
 npm install -g create-react-library
@@ -53,6 +64,7 @@ create-react-library
 ```
 
 Answer some basic prompts about your module, and then the CLI will perform the following steps:
+
 - copy over the template
 - install dependencies via yarn or npm
 - link packages together for local development
@@ -63,7 +75,6 @@ At this point, your new module should resemble this screenshot and is all setup 
 <p align="center">
   <img width="600" src="https://cdn.rawgit.com/transitive-bullshit/create-react-library/master/media/tree.svg">
 </p>
-
 
 ## Development
 
@@ -87,17 +98,15 @@ Now, anytime you make a change to your library in `src/` or to the example app's
 
 ![](https://media.giphy.com/media/12NUbkX6p4xOO4/giphy.gif)
 
-
 #### Publishing to npm
 
 ```bash
 npm publish
 ```
 
-This builds `cjs` and `es` versions of your module to `dist/` and then publishes your module to `npm`.
+This builds `commonjs` and `es` versions of your module to `dist/` and then publishes your module to `npm`.
 
 Make sure that any npm modules you want as peer dependencies are properly marked as `peerDependencies` in `package.json`. The rollup config will automatically recognize them as peers and not try to bundle them in your module.
-
 
 #### Deploying to Github Pages
 
@@ -107,6 +116,9 @@ npm run deploy
 
 This creates a production build of the example `create-react-app` that showcases your library and then runs `gh-pages` to deploy the resulting bundle.
 
+## Use with React Hooks
+
+If you use [react-hooks](https://reactjs.org/docs/hooks-intro.html) in your project, when you debug your example you may run into an exception [Invalid Hook Call Warning](https://reactjs.org/warnings/invalid-hook-call-warning.html). This [issue](https://github.com/facebook/react/issues/14257) explains the reason, your lib and example use a different instance, one solution is rewrite the `react` path in your example's `package.json` to 'file:../node_modules/react' or 'link:../node_modules/react'.
 
 ## Examples
 
@@ -141,8 +153,13 @@ Here are some example libraries that have been bootstrapped with `create-react-l
 - [react-editext](https://github.com/alioguzhan/react-editext) - Editable Text Component.
 - ... and hundreds more!
 
-Want to add yours to the list? Submit an [issue](https://github.com/transitive-bullshit/create-react-library/issues/new).
+Want to see a more completed list? Check out [Made with CRL](https://made-with-crl.netlify.com/)
 
+Want to add yours to the list? Submit an [PR](https://github.com/HurricaneInteractive/made-with-crl#adding-a-library) at the _Made with CRL_ repository.
+
+## Notice
+
+My open source efforts are now focused on [Saasify](https://github.com/saasify-sh/saasify), and I am not able to invest a significant amount of time into maintaining CRL anymore. I am looking for volunteers who would like to become active maintainers on the project. If you are interested, please shoot me a note.
 
 ## License
 
