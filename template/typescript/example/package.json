@@ -4,9 +4,17 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
+    "@testing-library/jest-dom": "{{#if yarn}}link:..{{else}}file:..{{/if}}/node_modules/@testing-library/jest-dom",
+    "@testing-library/react": "{{#if yarn}}link:..{{else}}file:..{{/if}}/node_modules/@testing-library/react",
+    "@testing-library/user-event": "{{#if yarn}}link:..{{else}}file:..{{/if}}/node_modules/@testing-library/user-event",
+    "@types/jest": "{{#if yarn}}link:..{{else}}file:..{{/if}}/node_modules/@types/jest",
+    "@types/node": "{{#if yarn}}link:..{{else}}file:..{{/if}}/node_modules/@types/node",
+    "@types/react": "{{#if yarn}}link:..{{else}}file:..{{/if}}/node_modules/@types/react",
+    "@types/react-dom": "{{#if yarn}}link:..{{else}}file:..{{/if}}/node_modules/@types/react-dom",
     "react": "{{#if yarn}}link:..{{else}}file:..{{/if}}/node_modules/react",
     "react-dom": "{{#if yarn}}link:..{{else}}file:..{{/if}}/node_modules/react-dom",
     "react-scripts": "{{#if yarn}}link:..{{else}}file:..{{/if}}/node_modules/react-scripts",
+    "typescript": "{{#if yarn}}link:..{{else}}file:..{{/if}}/node_modules/typescript",
     "{{name}}": "{{#if yarn}}link:..{{else}}file:..{{/if}}"
   },
   "scripts": {
@@ -18,10 +26,16 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
