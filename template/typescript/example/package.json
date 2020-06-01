@@ -3,6 +3,12 @@
   "homepage": ".",
   "version": "0.0.0",
   "private": true,
+  "scripts": {
+    "start": "node ../node_modules/react-scripts/bin/react-scripts.js start",
+    "build": "node ../node_modules/react-scripts/bin/react-scripts.js build",
+    "test": "node ../node_modules/react-scripts/bin/react-scripts.js test",
+    "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "{{#if yarn}}link:..{{else}}file:..{{/if}}/node_modules/@testing-library/jest-dom",
     "@testing-library/react": "{{#if yarn}}link:..{{else}}file:..{{/if}}/node_modules/@testing-library/react",
@@ -17,11 +23,8 @@
     "typescript": "{{#if yarn}}link:..{{else}}file:..{{/if}}/node_modules/typescript",
     "{{name}}": "{{#if yarn}}link:..{{else}}file:..{{/if}}"
   },
-  "scripts": {
-    "start": "node ../node_modules/react-scripts/bin/react-scripts.js start",
-    "build": "node ../node_modules/react-scripts/bin/react-scripts.js build",
-    "test": "node ../node_modules/react-scripts/bin/react-scripts.js test",
-    "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject"
+  "devDependencies": {
+    "@babel/plugin-syntax-object-rest-spread": "^7.8.3"
   },
   "eslintConfig": {
     "extends": "react-app"
