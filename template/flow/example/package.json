@@ -1,0 +1,30 @@
+{
+  "name": "{{name}}-example",
+  "homepage": ".",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ../node_modules/react-scripts/bin/react-scripts.js start",
+    "build": "node ../node_modules/react-scripts/bin/react-scripts.js build",
+    "test": "node ../node_modules/react-scripts/bin/react-scripts.js test",
+    "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject"
+  },
+  "dependencies": {
+    "react": "{{#if yarn}}link:..{{else}}file:..{{/if}}/node_modules/react",
+    "react-dom": "{{#if yarn}}link:..{{else}}file:..{{/if}}/node_modules/react-dom",
+    "react-scripts": "{{#if yarn}}link:..{{else}}file:..{{/if}}/node_modules/react-scripts",
+    "{{name}}": "{{#if yarn}}link:..{{else}}file:..{{/if}}"
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-object-rest-spread": "^7.8.3"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
