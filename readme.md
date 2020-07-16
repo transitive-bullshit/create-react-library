@@ -157,6 +157,13 @@ Want to see a more completed list? Check out [Made with CRL](https://made-with-c
 
 Want to add yours to the list? Submit an [PR](https://github.com/HurricaneInteractive/made-with-crl#adding-a-library) at the _Made with CRL_ repository.
 
+### Related tools
+
+- [create-react-app](https://github.com/facebook/create-react-app)
+- [create-react-hook](https://github.com/Hermanya/create-react-hook)
+
+Know another tool? Submit an [issue](https://github.com/transitive-bullshit/create-react-library/issues/new).
+
 ## Notice
 
 My open source efforts are now focused on [Saasify](https://github.com/saasify-sh/saasify), and I am not able to invest a significant amount of time into maintaining CRL anymore. I am looking for volunteers who would like to become active maintainers on the project. If you are interested, please shoot me a note.
