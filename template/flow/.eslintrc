@@ -23,6 +23,11 @@
       "version": "16"
     }
   },
+	"globals": {
+		"localStorage": true,
+		"fetch": true,
+    "sessionStorage": true
+  },
   "rules": {
     "space-before-function-paren": 0,
     "react/prop-types": 0,

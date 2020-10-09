@@ -7,6 +7,11 @@
     "prettier/standard",
     "prettier/react"
   ],
+	"globals": {
+		"localStorage": true,
+		"fetch": true,
+    "sessionStorage": true
+  },
   "env": {
     "node": true
   },
