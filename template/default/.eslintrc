@@ -8,6 +8,7 @@
     "prettier/react"
   ],
   "env": {
+    "browser": true,
     "node": true
   },
   "parserOptions": {

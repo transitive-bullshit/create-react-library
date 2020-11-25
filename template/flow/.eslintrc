@@ -9,6 +9,7 @@
     "flowtype"
   ],
   "env": {
+    "browser": true,
     "node": true
   },
   "parserOptions": {
