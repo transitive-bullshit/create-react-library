@@ -1,5 +1,13 @@
+# 2022 Update
+
+This tool is no longer actively maintained. I suggest using either [tsup](https://github.com/egoist/tsup), [tsdx](https://github.com/jaredpalmer/tsdx), or [microbundle](https://github.com/developit/microbundle).
+
+Here's a [guide](https://transitivebullsh.it/javascript-dev-tools-in-2022) I wrote in April 2022 which gives a breakdown of the best JS dev tools.
+
 # create-react-library
+
 CLI for creating reusable, modern React libraries using Rollup and create-react-app.
+
 > 这是一个 CLI 工具，借此您可以使用 Rollup 和 create-react-app 创建一个现代的，并可以可重复使用的您自己的 React 库（libraries)。
 
 [![NPM](https://img.shields.io/npm/v/create-react-library.svg)](https://www.npmjs.com/package/create-react-library) [![Build Status](https://travis-ci.org/transitive-bullshit/create-react-library.svg?branch=master)](https://travis-ci.org/transitive-bullshit/create-react-library) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
@@ -40,6 +48,7 @@ npm install -g create-react-library
 ```bash
 npx create-react-library
 ```
+
 _([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) 通常要求 npm 5.2+ 或者更高版本, 详情请参考 [关于较低 npm 版本的说明](https://gist.github.com/gaearon/4064d3c23a77c74a3614c498a8bb1c5f))_
 
 ## 创建一个新的模块
@@ -91,7 +100,7 @@ npm publish
 
 您会发现此命令创建了 `commonjs` 和 `es` 版本的模块，然后把您的模块发布到 `npm`。
 
-请务必要确保您将任何同等依赖（peer dependencies）的 npm 模块正确地加入到 `package.json` 中的 `peerDependencies`里。这样一来 rollup 将它们识别为同等依赖，而不会将它们打包到您的模块中。 
+请务必要确保您将任何同等依赖（peer dependencies）的 npm 模块正确地加入到 `package.json` 中的 `peerDependencies`里。这样一来 rollup 将它们识别为同等依赖，而不会将它们打包到您的模块中。
 
 然后就可以愉快的发布拉
 
@@ -100,9 +109,11 @@ npm publish
 ```bash
 npm run deploy
 ```
+
 这行命令会创建一个生产环境下的 example `create-react-app` 文件，这样能够展示您的库，然后请运行 `gh-pages` 来部署最终的打包文件。
 
 ## 使用 React Hooks
+
 如果您在项目中使用 [react-hooks](https://reactjs.org/docs/hooks-intro.html)，当您调试 example 项目时，您会遇到一个问题 [Invalid Hook Call Warning](https://reactjs.org/warnings/invalid-hook-call-warning.html)。
 此 [问题](https://github.com/facebook/react/issues/14257) 解释了其中的缘由，我们的库和文档使用了一个不同的实例，而我们的解决方案是重写您 example 中的 `react` 路径为"file:../node_modules/react"或者'link:../node_modules/react'。
 
@@ -144,6 +155,7 @@ npm run deploy
 想把您的项目添加到我们的列表中吗？欢迎在 _Made with CRL_ 库中提交一个 [PR] (https://github.com/HurricaneInteractive/made-with-crl#adding-a-library)。
 
 ## Notice
+
 现如今我的主要开源的精力集中在 [Saasify](https://github.com/saasify-sh/saasify)，所以我无法投资太多精力到维护此 CRL 中。我一直在为项目寻找想成为一个积极的维护者的志愿者。如果您有兴趣的话，私信我把。
 
 ## 证书

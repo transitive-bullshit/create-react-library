@@ -1,22 +1,14 @@
+# 2022 Update
+
+This tool is no longer actively maintained. I suggest using either [tsup](https://github.com/egoist/tsup), [tsdx](https://github.com/jaredpalmer/tsdx), or [microbundle](https://github.com/developit/microbundle).
+
+Here's a [guide](https://transitivebullsh.it/javascript-dev-tools-in-2022) I wrote in April 2022 which gives a breakdown of the best JS dev tools.
+
 # create-react-library
 
 > CLI for creating reusable, modern React libraries using Rollup and create-react-app.
 
 [![NPM](https://img.shields.io/npm/v/create-react-library.svg)](https://www.npmjs.com/package/create-react-library) [![Build Status](https://travis-ci.com/transitive-bullshit/create-react-library.svg?branch=master)](https://travis-ci.com/transitive-bullshit/create-react-library) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-
----
-
-<div align="center">
-	<a href="https://saasify.sh" title="Saasify">
-		<div>
-      <img src="https://docs.saasify.sh/_media/logo.png" alt="Saasify Logo" width="200" />
-		</div>
-    <sup>This project is sponsored by Saasify.</sup><br />
-		<sup><b>The easiest way to monetize your APIs</b></sup>
-	</a>
-</div>
-
----
 
 ## Intro
 
