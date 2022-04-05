@@ -154,10 +154,6 @@ npm run deploy
 
 想把您的项目添加到我们的列表中吗？欢迎在 _Made with CRL_ 库中提交一个 [PR] (https://github.com/HurricaneInteractive/made-with-crl#adding-a-library)。
 
-## Notice
-
-现如今我的主要开源的精力集中在 [Saasify](https://github.com/saasify-sh/saasify)，所以我无法投资太多精力到维护此 CRL 中。我一直在为项目寻找想成为一个积极的维护者的志愿者。如果您有兴趣的话，私信我把。
-
 ## 证书
 
 MIT © [Travis Fischer](https://github.com/transitive-bullshit)

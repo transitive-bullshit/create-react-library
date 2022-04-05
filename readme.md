@@ -149,10 +149,6 @@ Want to see a more completed list? Check out [Made with CRL](https://made-with-c
 
 Want to add yours to the list? Submit an [PR](https://github.com/HurricaneInteractive/made-with-crl#adding-a-library) at the _Made with CRL_ repository.
 
-## Notice
-
-My open source efforts are now focused on [Saasify](https://github.com/saasify-sh/saasify), and I am not able to invest a significant amount of time into maintaining CRL anymore. I am looking for volunteers who would like to become active maintainers on the project. If you are interested, please shoot me a note.
-
 ## License
 
 MIT © [Travis Fischer](https://github.com/transitive-bullshit)
