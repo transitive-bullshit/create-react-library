@@ -37,7 +37,7 @@
     "git-config-path": "^2.0.0",
     "github-username": "^5.0.1",
     "globby": "^11.0.0",
-    "handlebars": "^4.7.4",
+    "handlebars": "^4.7.7",
     "inquirer": "^7.1.0",
     "make-dir": "^3.0.2",
     "ora": "^4.0.3",
