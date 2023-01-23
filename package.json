@@ -13,7 +13,9 @@
     "create-react-library": "index.js"
   },
   "scripts": {
-    "test": "ava -v && standard *.js lib/*.js"
+    "test": "ava -v && standard *.js lib/*.js",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "keywords": [
     "react",
@@ -44,7 +46,8 @@
     "p-each-series": "^2.1.0",
     "parse-git-config": "^3.0.0",
     "validate-npm-package-name": "^3.0.0",
-    "which": "^2.0.2"
+    "which": "^2.0.2",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "ava": "^3.5.2",
@@ -58,5 +61,6 @@
       "index.test.js",
       "lib/**/*.test.js"
     ]
-  }
+  },
+  "snyk": true
 }
