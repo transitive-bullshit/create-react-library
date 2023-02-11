@@ -35,7 +35,7 @@
     "cp-file": "^6.0.0",
     "execa": "^4.0.0",
     "git-config-path": "^2.0.0",
-    "github-username": "^5.0.1",
+    "github-username": "^7.0.0",
     "globby": "^11.0.0",
     "handlebars": "^4.7.4",
     "inquirer": "^7.1.0",
@@ -47,7 +47,7 @@
     "which": "^2.0.2"
   },
   "devDependencies": {
-    "ava": "^3.5.2",
+    "ava": "^5.2.0",
     "rmfr": "^2.0.0",
     "standard": "^14.3.3"
   },
