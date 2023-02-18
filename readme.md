@@ -1,6 +1,6 @@
 # 2022 Update
 
-This tool is no longer actively maintained. I suggest using either [tsup](https://github.com/egoist/tsup), [tsdx](https://github.com/jaredpalmer/tsdx), or [microbundle](https://github.com/developit/microbundle).
+This tool is no longer actively maintained. I suggest using either [tsup](https://github.com/egoist/tsup), [tsdx](https://github.com/jaredpalmer/tsdx), [Create React Package](https://github.com/haseebanwar/create-react-pkg) or [microbundle](https://github.com/developit/microbundle).
 
 Here's an [article](https://transitivebullsh.it/javascript-dev-tools-in-2022#823feddaa1bb4edea19042852b0a5b54) I wrote in April 2022 which should help you decide between these different tools.
 
