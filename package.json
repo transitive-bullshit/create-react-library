@@ -47,7 +47,7 @@
     "parse-git-config": "^3.0.0",
     "validate-npm-package-name": "^3.0.0",
     "which": "^2.0.2",
-    "@snyk/protect": "latest"
+    "@snyk/protect": "1.1094.0"
   },
   "devDependencies": {
     "ava": "^3.5.2",
