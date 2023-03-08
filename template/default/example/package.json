@@ -16,7 +16,8 @@
     "{{name}}": "{{#if yarn}}link:..{{else}}file:..{{/if}}"
   },
   "devDependencies": {
-    "@babel/plugin-syntax-object-rest-spread": "^7.8.3"
+    "@babel/plugin-syntax-object-rest-spread": "^7.8.3",
+    "postcss-normalize": "^10.0.1"
   },
   "eslintConfig": {
     "extends": "react-app"
