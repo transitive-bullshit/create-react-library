@@ -40,7 +40,7 @@
     "github-username": "^5.0.1",
     "globby": "^11.1.0",
     "handlebars": "^4.7.4",
-    "inquirer": "^7.1.0",
+    "inquirer": "^7.3.3",
     "make-dir": "^3.0.2",
     "ora": "^4.1.1",
     "p-each-series": "^2.1.0",
