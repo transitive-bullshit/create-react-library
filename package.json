@@ -42,7 +42,7 @@
     "handlebars": "^4.7.4",
     "inquirer": "^7.1.0",
     "make-dir": "^3.0.2",
-    "ora": "^4.0.3",
+    "ora": "^4.1.1",
     "p-each-series": "^2.1.0",
     "parse-git-config": "^3.0.0",
     "validate-npm-package-name": "^3.0.0",
